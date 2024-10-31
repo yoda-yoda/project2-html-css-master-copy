@@ -1,0 +1,198 @@
+.info_box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between; 
+
+    height: 100vh;
+    width: 100%;
+    
+}
+
+
+#info_box1 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    padding: 10px;
+    text-align: center;
+    height: 50%;
+    width: 90%;
+    white-space: nowrap;
+}
+#box1_span{
+    display: block;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+#info_box2 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box3 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box4 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box5 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box6 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box7 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box8 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box9 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+#info_box10 {
+    margin-top: 50px;
+    border: 1px, solid, black;
+    height: 50%;
+    width: 90%;
+}
+
+
+
+
+
+#info_header {
+
+    white-space: nowrap;
+}
+
+#footer {
+    display : flex;
+    justify-content: center;
+}
+
+.infographic_container1{
+
+    display : flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.info_search {
+    display : inline;
+    white-space: nowrap;
+
+}
+
+.infographic_container2{
+    
+    display : inline-block;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#info_select {
+
+    border: 1px, solid, black;
+}
+
+.info_input {
+    display: inline-block;
+    border: 1px, solid, black;
+}
+
+#info_submit {
+    
+    border: 1px, solid, black;
+    display: inline-block;
+    
+}
+
+.info_hangmok {
+    
+    display: block;
+    border-bottom: 2px, solid, black;
+    margin-top: 50px;
+    margin-bottom: 10px;
+
+}
+
+
+.chart_info1 {
+
+    margin-top: 0px;
+    margin-left: 0px;
+    display: inline-block;
+    font-size: 14px;
+    color: blue;
+    white-space: nowrap;
+    
+    
+    
+}
+
+.chart_info2 {
+    
+    margin-right: 0px;
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    white-space: nowrap; 
+    
+    
+}
+
+.info1_a{
+
+    border: 3px, solid, black !important;
+    
+    width: 150px;
+    height: 170px;
+}
+
+
+.chart_info2 {
+    
+
+    margin-right: 300px;
+    display: inline-block;
+    
+
+}
+
+
+/* 메인배너이미지 */
+.main-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* 아래 여백 증가 */
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,86 @@
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 135px;
+}
+
+.header h1 {
+    font-size: 1.8rem; /* 기본 크기 약간 증가 */
+}
+
+.header img {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.header nav ul li {
+    font-size: clamp(12px, 2vw, 16px); /* 크기 범위 확장 */
+    color: #595959;
+}
+
+.submenu {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 180%;
+    left: 0;
+    background-color: white;
+    padding: 5px 0;
+    list-style: none;
+    min-width: 120px;
+    z-index: 10;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #000099;
+    transition: opacity 0.1s ease, visibility 0.1s ease;
+    flex-direction: column !important;
+}
+
+.submenu li {
+    padding: 5px 10px;
+    color: #595959;
+    white-space: nowrap;
+    display: block !important;
+    font-size: clamp(2px, 1.5vw, 14px) !important; /* 크기 범위 확장 */
+    transition: color 0.1s;
+}
+
+.submenu li:hover {
+    color: #000099;
+}
+
+.dropdown:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 5px; /* 버튼 간 간격 증가 */
+}
+
+.auth-buttons button {
+    height: 2.2rem; /* 버튼 높이 증가 */
+    width: 4.3rem; /* 버튼 너비 증가 */
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    font-size: clamp(10px, 2vw, 14px); /* 크기 범위 확장 */
+    padding: 0.25rem;
+    color: #595959;
+    transition: col
+}
+
+.auth-buttons button:hover {
+    color: #000099;
+    border-color: #000099;
+}

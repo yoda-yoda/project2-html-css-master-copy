@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FELX TEST 2</title>
+  <link rel="stylesheet" href="./flex_global.css">
+  <link rel="stylesheet" href="./flex_axis_line.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+
+      /* 
+      align-items
+      교차축(세로축)에서 아이템의 정렬 방식을 설정합니다.
+
+      stretch: 아이템을 컨테이너의 높이에 맞게 늘립니다.
+      flext-start: 교차축의 시작 부분에 정렬
+      flex-end: 교차축의 끝 부분에 정렬
+      center: 교차축의 가운데에 정렬
+      baseline: 텍스트의 기준선을 기준으로 정렬
+      */
+
+      /* align-items: flex-start; */
+      /* align-items: flex-end; */
+      align-items: center;
+
+      /* align-items: baseline; */
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="item_1" class="base font-1">A</div>
+    <div id="item_2" class="base font-2">B</div>
+    <div id="item_3" class="base font-3">C</div>
+    <div id="item_4" class="base font-4">D</div>
+    <div id="item_5" class="base font-1">E</div>
+  </div>
+</body>
+</html>

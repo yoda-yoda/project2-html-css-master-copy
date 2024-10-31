@@ -1,0 +1,364 @@
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+}
+
+.sidebar h6 { 
+    margin-bottom: 1.5rem;
+    font-size: 1rem; /* 더 큰 크기 */
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.sidebar ul li {
+    font-size: 0.9rem; /* 더 큰 크기 */
+    margin-left: 0.15rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar ul li input[type="checkbox"] {
+    background-color: white !important;
+    width: 16px; /* 체크박스 크기 증가 */
+    height: 16px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px; /* 체크박스 둥글게 */
+    margin-right: 0.6rem;
+}
+
+.sidebar ul li input[type="checkbox"]:checked {
+    background-color: #000099;
+    border-color: #000099;
+}
+
+.sidebar ul li input[type="checkbox"]:checked::after {
+    top: 1px;
+    left: 4px;
+    width: 5px; /* 체크 표시 크기 증가 */
+    height: 8px;
+}
+
+.item-value {
+    margin-left: auto;
+    font-size: 0.8rem; /* 더 큰 크기 */
+    color: #33ccff;
+}
+
+.aside-hr {
+    height: 1px; /* 선의 두께 증가 */
+    background-color: #a6a6a6 !important;
+    margin: 15px 0;
+}
+
+/* Main Content */
+.main-content {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 간격 증가 */
+    margin-left: 1.5rem; /* 여백 증가 */
+}
+
+/* 인기 데이터 및 최신 데이터 레이아웃 */
+.popular-latest-container {
+    display: flex;
+    gap: 14px; /* 간격 증가 */
+}
+
+.popular-section, .latest-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* 간격 증가 */
+    flex: 1;
+}
+
+.popular-section h6, .latest-section h6 {
+    font-size: 1rem; /* 더 큰 크기 */
+    margin: 0;
+    padding: 0;
+}
+
+.popular-data, .latest-data {
+    display: flex;
+    flex-direction: center;
+    padding: 12px;
+    border-radius: 4px; /* 더 둥글게 */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.1s ease;
+    cursor: pointer;
+}
+
+.popular-data:hover, .latest-data:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.popular-data img, .latest-data img {
+    width: 80px; /* 이미지 크기 증가 */
+    height: auto;
+    padding-right: 10px; /* 오른쪽 패딩 증가 */
+    padding: 5px;
+}
+
+.data-item {
+    font-size: 1rem; /* 더 큰 크기 */
+    padding: 5px 5px;
+}
+
+.data-item p {
+    color: #a6a6a6;
+}
+
+/* 데이터 테이블 */
+.data-table {
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* 간격 증가 */
+}
+
+.search-container {
+    width: 100%;
+    background-color: #e0e0eb !important;
+    padding: 30px 0; /* 패딩 증가 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px; /* 더 둥글게 */
+}
+
+.search-bar {
+    background-color: #e0e0eb !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 48%; /* 검색바 너비 증가 */
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 8px; /* 패딩 증가 */
+    border-radius: 3px;
+    border: 1px solid #ccc; /* 기본 테두리 */
+    height: 100%; /* 높이 증가 */
+    font-size: 0.9rem; /* 더 큰 크기 */
+    box-shadow: 0 0 5px rgba(0, 153, 255, 0.5); /* 항상 그림자 추가 */
+    transition: box-shadow 0.3s ease; /* 부드러운 전환 효과 추가 */
+}
+
+.search-bar input:focus {
+    outline: none; /* 포커스 시 아웃라인 제거 */
+    box-shadow: 0 0 5px rgba(0, 153, 255, 0.5); /* 포커스 시에도 그림자 유지 */
+}
+
+.search-bar button {
+    background-color: #000099; /* 남색 배경 */
+    padding: 8px 20px; /* 높이 및 넓이 증가 */
+    border-radius: 6px; /* 더 둥글게 */
+    color: white; /* 흰색 글씨 */
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem; /* 더 큰 크기 */
+    transition: opacity 0.1s ease; /* 부드러운 전환 효과 추가 */
+}
+
+.search-bar button:hover {
+    opacity: 0.3; /* 호버 시 불투명도 감소 */
+}
+
+.search-description {
+    background-color: #e0e0eb !important;
+    font-size: 0.8rem; /* 더 큰 크기 */
+    width: 48%; /* 검색바 너비에 맞춤 */
+    color: #666;
+    text-align: left;
+}
+
+/* 메인 이미지 */
+.main-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* 아래 여백 증가 */
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-img {
+    width: 30px;
+    height: auto;
+}
+
+.table-header {
+    display: flex; /* 수평으로 정렬 */
+    justify-content: space-between; /* 양쪽 끝에 배치 */
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 10px; /* 여백 */
+    border-bottom: 2px solid #ddd; /* 하단 테두리 */
+}
+
+.item-count {
+    font-size: 1rem; /* 글씨 크기 */
+    color: #333; /* 글씨 색 */
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 왼쪽 정렬 */
+}
+
+.button-container {
+    margin-top: 10px; /* 테이블과 버튼 간의 간격 조정 */
+    width: 100%; /* 버튼 컨테이너 너비를 100%로 설정 */
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+}
+
+.add-button {
+    background-color: #000099; /* 원하는 배경색 */
+    color: white; /* 글씨 색상 */
+    padding: 10px 20px; /* 패딩 조정 */
+    border: none; /* 기본 테두리 제거 */
+    border-radius: 5px; /* 둥글게 만들기 */
+    cursor: pointer; /* 커서 포인터 변경 */
+}
+
+.add-button:hover {
+    opacity: 0.8; /* 호버 시 불투명도 조정 */
+}
+
+
+
+.data-table {
+    width: 100%; /* 테이블 너비 설정 */
+    border-collapse: collapse; /* 경계선 합치기 */
+}
+
+.data-table th, .data-table td {
+    padding: 15px; /* 셀 패딩 */
+    text-align: left; /* 헤더 및 셀 텍스트 중앙 정렬 */
+    border-bottom: 1px solid #ddd; /* 하단 경계선 추가 */
+}
+
+.data-table tr {
+    display: flex; /* 플렉스박스 사용 */
+    justify-content: space-between; /* 공간을 균등하게 분배 */
+}
+
+.data-table th {
+    min-width: 10px; /* 최소 너비 설정 */
+    text-align: center;
+    color: #a6a6a6;
+}
+
+.data-name {
+    flex: 2; /* 데이터명 열을 두 배 넓이로 설정 */
+    min-width: 1000px; /* 최소 너비 설정 (원하는 대로 조정 가능) */
+}
+
+.data-table td {
+    min-width: 20px; /* 최소 너비 설정 */
+    
+}
+
+
+.star-icon {
+    width: 14px; /* 아이콘 너비 */
+    height: 14px; /* 아이콘 높이 */
+    margin-right: px; /* 아이콘과 텍스트 간 간격 */
+    vertical-align: middle; /* 텍스트와 수직 정렬 */
+}
+
+
+.pagination-container {
+    display: flex; /* 수평으로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    gap: 5px; /* 버튼 간의 간격 */
+    margin-left: 160px;
+}
+
+.pagination-button {
+    background-color: white; /* 기본 배경색 */
+    border: 2px solid transparent; /* 기본 테두리 투명 */
+    border-radius: 50%; /* 동그란 모양 */
+    padding: 10px 15px; /* 버튼 크기 조정 */
+    cursor: pointer; /* 포인터 커서 */
+    font-size: 0.9rem; /* 글씨 크기 */
+    transition: border-color 0.2s, background-color 0.2s; /* 부드러운 전환 */
+}
+
+.pagination-button:hover {
+    border-color: #000099; /* 호버 시 테두리 색상 */
+}
+
+.pagination-button.active {
+    background-color: #000099; /* 클릭 시 남색 배경 */
+    color: white; /* 글씨 색상 */
+}
+
+.dots {
+    align-self: center; /* 중앙 정렬 */
+    font-size: 0.9rem; /* 글씨 크기 */
+    color: #333; /* 글씨 색상 */
+}
+
+
+@media (prefers-color-scheme: dark) {
+    .sidebar ul li input[type="checkbox"] {
+        background-color: white; /* 체크박스 배경을 흰색으로 설정 */
+        border-color: #a6a6a6; /* 체크박스 테두리 색상 */
+    }
+}
+
+.data-dropdown {
+    position: relative; /* 드롭다운 위치 설정 */
+    display: inline-block; /* 버튼과 리스트를 inline-block으로 설정 */
+}
+
+.dropdown-toggle {
+    background-color: white; /* 배경색 */
+    border: 1px solid #ccc; /* 테두리 */
+    padding: 10px; /* 패딩 */
+    border-radius: 4px; /* 모서리 둥글게 */
+    cursor: pointer; /* 커서 포인터 */
+}
+
+.data-dropdown-list {
+    display: none; /* 기본적으로 리스트 숨김 */
+    position: absolute; /* 드롭다운 위치 설정 */
+    background-color: white; /* 배경색 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* 그림자 */
+    margin-top: 5px; /* 버튼 아래 여백 */
+    padding: 0; /* 패딩 초기화 */
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    z-index: 1000; /* 드롭다운이 다른 요소 위에 나타나도록 설정 */
+    width: 150px;
+}
+
+.data-dropdown:hover .data-dropdown-list {
+    display: block;
+}
+
+.data-dropdown-list li {
+    padding: 10px; /* 각 리스트 항목의 패딩 */
+}
+
+.dropdown-list li a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #000; /* 링크 색상 */
+}
+
+.dropdown-list li:hover {
+    background-color: #f0f0f0; /* 호버 시 배경색 변경 */
+}
+
+

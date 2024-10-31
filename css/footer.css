@@ -1,0 +1,31 @@
+/* Footer */
+.footer {
+    padding: 45px 200px; /* 오른쪽 패딩을 줄이고 왼쪽으로 이동 */
+    display: flex;
+    justify-content: flex-start; /* 왼쪽 정렬 유지 */
+    border-top: 2px solid #ddd; /* 선 두께를 3배로 증가 */
+}
+
+.footer-logo {
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 이미지와 텍스트를 왼쪽 정렬 */
+}
+
+.footer-logo img {
+    width: 300px; /* 이미지 크기를 3배로 증가 */
+    height: auto;
+}
+
+.footer-info {
+    text-align: left;
+    padding-left: 30px; /* 왼쪽 패딩을 3배로 증가 */
+    padding-bottom: 30px; /* 아래 패딩을 3배로 증가 */
+    font-size: 1.2rem; /* 폰트 크기를 3배로 증가 */
+    color: #a6a6a6;
+}
+
+.footer-info p {
+    margin: 0px 0; /* 위아래 간격 유지 */
+}
