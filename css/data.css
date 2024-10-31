@@ -98,7 +98,7 @@
 }
 
 .popular-data img, .latest-data img {
-    width: 80px; /* 이미지 크기 증가 */
+
     height: auto;
     padding-right: 10px; /* 오른쪽 패딩 증가 */
     padding: 5px;
