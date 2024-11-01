@@ -9,279 +9,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="icon" href="../images/general/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/main.css">
     
-    <style>
-        .main-banner{
-            display: grid;
-            grid-template-columns: 5% 45% 45% 5%;
-            grid-template-rows: 15% 70% 15% ;
-            background-color: rgb(244, 244, 244);
-        
-            background-image: url(../images/main/main-banner.jpg);
-            background-size: cover;
-            padding: 20px;
-            height: 500px;
-        }
-        
-
-        .main-bannersearch {
-            background-color: rgb(0, 50, 155);
-            color: white;
-            font-size: 10px;
-        }
-
-        .main-banner-dataSearch{
-            color: rgb(0, 50, 155);
-            font-size: 20px;
-            font-weight: 700;
-        }
-        .main-banner-leftgird{
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            width: 100%;
-            height: 100%;
-            display: flex;
-        }
- 
-        
-
-
-        .main-banner-img{
-            grid-column: 3 / 4;
-            grid-row: 2 / 3;
-            width: 100%;
-            height: 100%;
-        }
-
-        .main-banner-font{
-            color: rgb(0, 50, 155);
-            font-size: 13px;
-        }
-
-        /* 2번째 섹션 */
-        .main-second-section{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            background-color: white;
-            height: 380px;
-        }
-        
-        .main-second-box{
-            width: 200px;
-            height: 270px;
-            background-color: gold;
-            border-radius: 3%;
-            
-            box-shadow: 
-            2px 0px rgba(0, 0, 0, 0.2),
-            0px 2px rgba(0, 0, 0, 0.2),
-            -2px 0px rgba(0, 0, 0, 0.2),
-            0px -2px rgba(0, 0, 0, 0.2),
-        }
-
-        .main-second-box:hover{
-            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-        }
-        .main-second-img{
-            
-            align-items: center; 
-            justify-content: center; 
-            border-radius: 50%;
-           
-        }
-
-        .main-arrow-box{
-            display: flex;
-            align-items: center; 
-            justify-content: center; 
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            color: rgb(40, 40, 40);
-            background-color: rgb(252, 255, 252);
-            box-shadow:  4px 4px 8px rgba(0, 0, 0, 0.2);
-            font-size: 23px;
-        
-        }
-
-        .main-arrow-box:hover{
-            color: blue;
-        }
-     
-        /* 3번째 섹션 */
-        .main-third-section{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center; 
-            justify-content: center;
-            background-color: rgb(244, 244, 244);
-            gap: 5px;
-            height: 470px;
-        }
-
-        .main-third-fakebox{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 530px;;
-            height: 100px;
-            
-            color: rgb(40, 40, 40);
-            background-color: rgb(244, 244, 244);
-            font-weight: 700;
-            font-size: 22px;
-        }
-
-        .main-third-box{
-            display: flex;
-            align-items: center; 
-            justify-content: center; 
-            width: 530px;
-            height: 90px;
-            
-            color: rgb(40, 40, 40);
-            background-color: rgb(252, 255, 252);
-            box-shadow:  4px 4px 0px rgba(0, 0, 0, 0.2);
-            font-size: 23px;
-        }
-        .main-third-box:hover{
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-        }
-
-
-        /* 4번째 섹션 */
-        
-        .main-fourth-section{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center; 
-            justify-content: center;
-            background-color: rgb(255, 255, 255);
-            gap: 5px;
-            height: 460px;
-        }
-
-        .main-fourth-fakebox{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            width: 530px;;
-            height: 100px;
-            
-            color: rgb(40, 40, 40);
-            background-color: rgb(255,255,255);
-            font-weight: 700;
-            font-size: 22px;
-        }
-        .main-fourth-box{
-            display: flex;
-            align-items: center; 
-            justify-content: center; 
-            width: 530px;
-            height: 90px;
-            
-            color: rgb(40, 40, 40);
-            background-color: rgb(252, 255, 252);
-            box-shadow:  4px 4px 0px rgba(0, 0, 0, 0.2);
-            font-size: 23px;
-        }
-
-        .main-fourth-box:hover{
-        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        /* 5번째 섹션 */
-        
-        .main-fifth-section{
-            display: grid;
-            grid-template-columns: 5% 30% 30% 30% 5%;
-            grid-template-rows: 6% 6% 6% 37% 37% 8% ;
-            background-color: rgb(244, 244, 244);
-            height: 740px;
-        }    
-        .main-fifth-box:nth-child(1) {
-            grid-column: 2 / 3;
-            grid-row: 2 / 3;
-            font-size: 25px;
-            background-color: transparent;
-            color: rgb(80, 80, 80);
-            font-weight: 700;
-        }
-
-        .main-fifth-box:nth-child(2) {
-            grid-column: 2 / 3;
-            grid-row: 4 / 5;
-            padding: 0; 
-            width: 95%;
-            height: 90%;
-            border: none;
-            border-radius: 8px;
-        }
-
-        .main-fifth-box:nth-child(3) {
-            grid-column: 3 / 4;
-            grid-row: 4 / 5;
-            padding: 0; 
-            width: 95%;
-            height: 90%;
-            border: none;
-            border-radius: 8px;
-        }
-
-        .main-fifth-box:nth-child(4) {
-            grid-column: 4 / 5;
-            grid-row: 4 / 5;
-            padding: 0; 
-            width: 95%;
-            height: 90%;
-            border: none;
-            border-radius: 8px;
-        }
-
-        .main-fifth-box:nth-child(5) {
-            grid-column: 2 / 3;
-            grid-row: 5 / 6;
-            padding: 0; 
-            width: 95%;
-            height: 90%;
-            border: none;
-            border-radius: 8px;
-        }
-
-        .main-fifth-box:nth-child(6) {
-            grid-column: 3 / 4;
-            grid-row: 5 / 6;
-            padding: 0; 
-            width: 95%;
-            height: 90%;
-            border: none;
-            border-radius: 8px;
-        }
-
-        .main-fifth-box:nth-child(7) {
-            grid-column: 4 / 5;
-            grid-row: 5 / 6;
-            padding: 0; 
-            width: 95%;
-            height: 90%;
-            border: none;
-            border-radius: 8px;
-        }
-        
-        /* 6번째 섹션  */
-
-        .main-sixth-section{
-            display: flex;
-            background-color: white;
-            height: 650px;
-        }    
-        
-
-    </style>
 </head>
 <body>
     <!-- headder -->
@@ -333,82 +62,97 @@
 
     </header>
     <!-- banner -->
-    
-        
-    <section> 
-        <div  class="main-banner " style="background-color: transparent !important;">
-            <div class="main-banner-leftgird">
-                <p class="main-banner-dataSearch" style="background-color: transparent !important;">데이터 검색</p>
+            <section>
+                <div class="main-flex main-banner-baseset main-flex-content-center main-align-item ">
+                    <div class="main-banner-img-preset main-banner-img-grid ">
+                        <div class="main-banner-item-leftgird main-banner-item-leftgirdset">
+                            <p class="main-banner-left-item-dataSearch ">데이터 검색</p>
+                            <p class="main-banner-left-item-information">제주의 정보를 제주데이터허브에서 확인하세요.
+                                <br>다양한 키워드로 쉽게 데이터를 검색하고 활용할 수 있습니다
+                            </p>
+                            <div class="main-bannersearch ">
+                                <label for="main-searchbar"></label>
+                                <input type="text" class="main-bannersearchbar" id="main-searchbar" placeholder="키워드를 입력하세요.">
+                                <button class = "search-button">검색</button>                             
+                               
+                            </div>
+                            <div class="main-banner-left-listitemGrid">
+                                슈바
+                            </div>
+                        </div>
+                        <div class="main-banner-item-picturebox main-banner-right-itembox">
+                            <a class="main-banner-item-box left-button main-banner-right-item z-index" href="#">&lt;</a>
+                            <img class="main-banner-item-picture main-banner-right-item  " src="../images/main/banner-img.png">
+                            <a class="main-banner-item-box right-button main-banner-right-item z-index " href="#">&gt;</a>
+                        </div>
+                       
+                        
+                           
+                        </div>
+                    </div>
+                    
 
-                <p class="main-banner-font main-banner-leftflex"  style="background-color: transparent !important;">제주의 정보를 제주데이터허브에서 확인하세요.
-                    <br>다양한 키워드로 쉽게 데이터를 검색하고 활용할 수 있습니다
-                </p>
+                    
+                </div>
 
-                <label for="main-searchbar"></label>
-                <input type="text" id="main-searchbar" placeholder="키워드를 입력하세요.">
-                <button class="main-bannersearch btn btn-sm" type="submit">검색</button>
-            </div>
-            
+            </section>
 
-            <img class="main-banner-img" src="../images/main/banner-img.png">
-        <div>
-    </section>
+            <!-- 2번째 섹션 -->
+            <section class = "main-second-section">
+                <a class="main-arrow-box" href="#">&lt;</a>
+               
+                <div class="main-second-box"><img class="main-second-img" src="../images/main/img-home-health.png"></div>
+                <div class="main-second-box"></div>
+                <div class="main-second-box"></div>
+                <div class="main-second-box"></div>
+                <div class="main-second-box"></div>
+                <a class="main-arrow-box" href="#">&gt;</a>
+            </section>  
 
-    <!-- 2번째 섹션 -->
-    <section class = "main-second-section">
-        <a class="main-arrow-box" href="#">&lt;</a>
-        <div class="main-second-box"><img class="main-second-img" src="../images/main/img-home-health.png"></div>
-        <div class="main-second-box"></div>
-        <div class="main-second-box"></div>
-        <div class="main-second-box"></div>
-        <div class="main-second-box"></div>
-        <a class="main-arrow-box" href="#">&gt;</a>
-    </section>  
+            <!-- 3번째 섹션 -->
 
-    <!-- 3번째 섹션 -->
+            <section class = "main-third-section">
+                <a class="main-third-fakebox" href="#">인기 데이터</a>
+                <a class="main-third-box" href="#"></a>
+                <a class="main-third-box" href="#"></a>
+                <a class="main-third-box" href="#"></a>
+                <a class="main-third-fakebox" href="#">최신 데이터</a>
+                <a class="main-third-box" href="#"></a>
+                <a class="main-third-box" href="#"></a>
+                <a class="main-third-box" href="#"></a>
+                
+            </section>  
 
-    <section class = "main-third-section">
-        <a class="main-third-fakebox" href="#">인기 데이터</a>
-        <a class="main-third-box" href="#"></a>
-        <a class="main-third-box" href="#"></a>
-        <a class="main-third-box" href="#"></a>
-        <a class="main-third-fakebox" href="#">최신 데이터</a>
-        <a class="main-third-box" href="#"></a>
-        <a class="main-third-box" href="#"></a>
-        <a class="main-third-box" href="#"></a>
-        
-    </section>  
+            <!-- 4번째 섹션 -->
+            <section class = "main-fourth-section">
+                <a class="main-fourth-fakebox" href="#">차트 인포그래픽</a>
+                <a class="main-fourth-box" href="#"></a>
+                <a class="main-fourth-box" href="#"></a>
+                <a class="main-fourth-box" href="#"></a>
+                <a class="main-fourth-fakebox" href="#"></a>
+                <a class="main-fourth-box" href="#"></a>
+                <a class="main-fourth-box" href="#"></a>
+                <a class="main-fourth-box" href="#"></a>
+            </section>  
 
-    <!-- 4번째 섹션 -->
-    <section class = "main-fourth-section">
-        <a class="main-fourth-fakebox" href="#">차트 인포그래픽</a>
-        <a class="main-fourth-box" href="#"></a>
-        <a class="main-fourth-box" href="#"></a>
-        <a class="main-fourth-box" href="#"></a>
-        <a class="main-fourth-fakebox" href="#"></a>
-        <a class="main-fourth-box" href="#"></a>
-        <a class="main-fourth-box" href="#"></a>
-        <a class="main-fourth-box" href="#"></a>
-    </section>  
+            <!-- 5번째 섹션 -->
+            <section class = "main-fifth-section">
+                <span class="main-fifth-box">영상 인포그래픽</span>
+                <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+            </section>  
 
-    <!-- 5번째 섹션 -->
-    <section class = "main-fifth-section">
-        <span class="main-fifth-box">영상 인포그래픽</span>
-        <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
-        <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
-        <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
-        <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
-        <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
-        <iframe class="main-fifth-box" src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
-    </section>  
+            <!-- 6번째 섹션 -->
+            <section class = "main-sixth-section">
+                <div>
 
-    <!-- 6번째 섹션 -->
-    <section class = "main-sixth-section">
-        <div>
-
-        </div>
-    </section> 
-    
+                </div>
+            </section> 
+  
 
     
     

@@ -3,26 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>제주데이터허브</title>
     <link rel="icon" href="../images/components/favicon.ico">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/data.css">
+    <link rel="stylesheet" href="../css/report.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="../css/infographic.css">
-    
-    <style>
-
-    </style>
-
 </head>
-
-
 <body>
-    <!-- 위쪽 -->
-    <!-- 헤더 여기에 넣고 -->
     <header class="header">
         <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
         <nav>
@@ -70,87 +59,58 @@
         </div>
 
     </header>
-    <!-- 헤더끝 -->
-
 
     <div class="main-image">
-        <img src="../images/infographic/infographic-banner.png" alt="Main Visual">
-    </div>
-    <!-- 인포그래픽 이미지 배너-->
-
-    <section class="infographic_container1"> <!-- infographic_container1 시작 -->
-
-    <div class="chart_info1">
-        <a class="info1_a" href="#">차트인포그래픽</a>
-    </div>
-    
-
-    <!-- infographic_container2 시작 -->
-
-    <div class="infographic_container2">
-    
-    <section style="display: flex">
-    <div class="chart_info2">
-        차트인포그래픽
-    </div>
-
-    <div class="info_search">
-    <select id="info_select" name="example">
-        <option value="value1">제목</option>
-        <option value="value2">내용</option>
-        <option value="value3">제목+내용</option>
-    </select>
-
-    <input class="info_input" type="text" value="검색어 입력">
-    <button class="btn btn-primary" id="info_submit">검색</button>
-    </div>
-    </section>
-
-
-
-    <div class="info_hangmok">
-        총 68개 항목
-    </div>
-    <hr>
-
-    <div class="info_box_grid">
-
-        <a href="#" class="info_box info_flex" id="info_box1">
-            
-            
-            <div class="info_inline">
-            
-            <h2 id= "box_title" >서귀포시 직영관광지 관람객수 추이(월간)</h2>
-            <span id="box_span"> 2023.11.08  | </span>
-            <span id="box_span"> 서귀포시 직영관광지의 관람객수를 월별로 알아...</span>
-            </div>
-        </a>
-        
-        <a href="#" class="info_box" id="info_box2">
-            <img id="info_image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fshop1.phinf.naver.net%2F20241002_116%2F1727849828220OXfIG_PNG%2F3467854697577362_400842365.png&type=a340">
-            <h2 id= "box_title" >서귀포시 감귤 종류별 면적 및 생산량 추이(연간)</h2>  
-            <span id="box_span"> 2023.11.08 | 서귀포시에서 생산하는 감귤 종류별로 면적...</span>
-        </a>
-            
-        
-        
-
+        <img src="../images/report/report-banner.png" alt="Main Visual">
     </div>
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    
+    <div class="wrapper">
+        <div class="container">
+
+            <aside class="sidebar">
+                <h3>AI리포트</h3>
+                <hr>
+                <h3>정기리포트</h3>
+            </aside>
+
+            <main class="main-content">
+                <div class="main-title">
+                    <h1>AI리포트</h1>
+                </div>
+                <div class="donut-graphs">
+                    <div class="radial-progress" style="--value:0;" role="progressbar">0%</div>
+                    <div class="radial-progress" style="--value:20;" role="progressbar">20%</div>
+                    <div class="radial-progress" style="--value:60;" role="progressbar">60%</div>
+                    <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+                    <div class="radial-progress" style="--value:100;" role="progressbar">100%</div>
+                </div>
+                <div class="donut-grphs">
+                    <div
+                    class="radial-progress"
+                    style="--value:70; --size:12rem; --thickness: 2px;"
+                    role="progressbar">
+                    70%
+                    </div>
+                    <div
+                    class="radial-progress"
+                    style="--value:70; --size:12rem; --thickness: 2rem;"
+                    role="progressbar">
+                    70%
+                    </div>
+                </div>
 
 
-    </div> <!-- infographic_container2 끝 -->
+                
 
-    </section><!-- infographic_container1 끝 -->
+            </main>
+
+        </div>
+    </div>
 
 
 
-    <!-- 아래쪽 -->
-     <!-- 푸터를 여기에 넣고  -->
-     <footer class="footer" id="footer">
+    <footer class="footer">
         <div class="footer-logo">
             <hr>
             <img src="../images/components/datahub-logo-removebg-preview.png" alt="JEJU Data Hub Logo">
@@ -160,7 +120,6 @@
                 <p>&copy; Jeju Data Hub, 2020</p>
             </div>
         </div>
-        </footer>
-   
+    </footer>
 </body>
 </html>

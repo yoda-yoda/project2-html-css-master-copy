@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-
 /* 메인배너이미지 시작*/
 .main-image {
     width: 100%;
@@ -11,6 +10,7 @@
     margin-bottom: 20px; /* 아래 여백 증가 */
 }
 
+
 .main-image img {
     width: 100%;
     height: auto;
@@ -18,21 +18,28 @@
 /* 메인배너이미지 끝*/
 
 
-
-
 .infographic_container1{
 
+    padding: 0px;
     display : flex;
     justify-content: center;
-    flex-wrap: nowrap;
     height: 100%;
 }
 
+
 .info_search {
-    display : inline;
-    white-space: nowrap;
+
+    display : inline-block;
 
 }
+
+.info_flex {
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 
 .infographic_container2{
     
@@ -41,10 +48,12 @@
     margin-left: 60px;
     margin-right: 60px;
 }
+
 .info_input {
     display: inline-block;
     border: 1px, solid, black;
 }
+
 .info_hangmok {
     
     display: block;
@@ -64,14 +73,12 @@
     color: blue;
     white-space: nowrap;
     
-    
-    
 }
 
 .chart_info2 {
     
     margin-right: 0px;
-    display: inline;
+    display: inline-block;
     font-size: 30px;
     font-weight: bold;
     white-space: nowrap; 
@@ -113,35 +120,42 @@
 }
 
 
+
 .info_box {
     margin-top: 50px;
-
+    
     padding: 0px;
     text-align: center;
     height: 90px;
     width: 430px;
-    white-space: nowrap;
+   
     border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
+
+    border: 0.5px, solid, #f2f2f2;
+    box-shadow: 1px 1px 1px rgba(3, 3, 3, 3);
+    
 }
 
-#info_image1{
-    width: 52px; height: 52px; display:inline; margin:0px;
+#info_image{
+    width: 52px; height: 52px; display:inline; margin-top:20px;
+    content: center;
 }
 
-#box1_title{
-    display: inline; margin:0px; padding:0px;
+.info_inline{ 
+    display: inline;
 }
-#box1_span{
-    display: block;
-    margin-left: 50px;
+
+#box_title{
+    display: block; margin:0px; padding:0px;
+    
+}
+#box_span{
+    display: inline;
+   
+    margin-left:50px;
     font-size: 10px;
-    white-space: nowrap;
+    
 }
-
-
-
-
 
 
 #info_header {
