@@ -16,7 +16,7 @@
         <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
         <nav>
             <ul>
-                <li>이용안내</li>
+                <li><a href="../pages/main.html">이용안내</a></li>
                 <li><a href="../pages/data.html">데이터</a></li>
                 <li class="dropdown">
                     <a href="../pages/infographic.html">인포그래픽</a>
@@ -107,24 +107,57 @@
                     <div class="popular-section">
                         <h6>인기 데이터</h6>
                         <section class="popular-data">
-                            <img src="../images/data/data-slide1.png" alt="slide-img-1">
-                            <br>
-                            <div class="data-item">[소비] 공개 내국인 관광객 거주, 성별, 연령, 행정구역
-                                <br><br>
-                                <p>2021-01-18 | 내국인 관광객 지역, 업종, 성별, 연령대별...</p>
+                            <!-- 슬라이드 1 -->
+                            <input type="radio" name="popular-slider" id="popular-slide1" checked hidden>
+                            <div class="slide" id="popular-data-slide-1">
+                                <img src="../images/data/data-slide1.png" alt="slide-img-1">
+                                <div class="data-item">[소비] 공개 내국인 관광객 거주, 성별, 연령, 행정구역
+                                    <p>2021-01-18 | 내국인 관광객 지역, 업종, 성별, 연령대별...</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 슬라이드 2 -->
+                            <input type="radio" name="popular-slider" id="popular-slide2" hidden>
+                            <div class="slide" id="popular-data-slide-2">
+                                <img src="../images/data/data-slide2.png" alt="slide-img-2">
+                                <div class="data-item">[소비, 경제] 최근 이슈가 된 소셜 빅데이터를 통해 알아보는..
+                                    <p>2024-10-14 | 소상공인 경제 동향(BSI) 현황에 대한 데..</p>
+                                </div>
                             </div>
                         </section>
+
+                        <!-- 슬라이드 전환 버튼 -->
+                        <div class="slide-controls">
+                            <label for="popular-slide1" class="control-dot"></label>
+                            <label for="popular-slide2" class="control-dot"></label>
+                        </div>
+
                     </div>
                     <div class="latest-section">
                         <h6>최신 데이터</h6>
                         <section class="latest-data">
-                            <img src="../images/data/data-slide2.png" alt="slide-img-2">
-                            <br>
-                            <div class="data-item">[소비, 경제] 최근 이슈가 된 소셜 빅데이터를 통해 알아보는..
-                                <br><br>
-                                <p>2024-10-14 | 소상공인 경제 동향(BSI) 현황에 대한 데..</p>
+                            <input type="radio" name="latest-slider" id="latest-slide1" checked hidden>
+                            <div class="slide" id="latest-data-slide-1">
+                                <img src="../images/data/data-slide1.png" alt="slide-img-1">
+                                <div class="data-item">[소비] 공개 내국인 관광객 거주, 성별, 연령, 행정구역
+                                    <p>2021-01-18 | 내국인 관광객 지역, 업종, 성별, 연령대별...</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 슬라이드 2 -->
+                            <input type="radio" name="latest-slider" id="latest-slide2" hidden>
+                            <div class="slide" id="latest-data-slide-2">
+                                <img src="../images/data/data-slide2.png" alt="slide-img-2">
+                                <div class="data-item">[소비, 경제] 최근 이슈가 된 소셜 빅데이터를 통해 알아보는..
+                                    <p>2024-10-14 | 소상공인 경제 동향(BSI) 현황에 대한 데..</p>
+                                </div>
                             </div>
                         </section>
+
+                        <div class="slide-controls">
+                            <label for="latest-slide1" class="control-dot"></label>
+                            <label for="latest-slide2" class="control-dot"></label>
+                        </div>
                     </div>
                 </div>
             
@@ -172,7 +205,12 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1257</td>
                                 <td class="data-name">[소비, 경제] 소상공인시장진흥공단 소상공인 경기동향(BSI) 현황</td>
                                 <td>2024-10-14</td>
@@ -181,7 +219,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1256</td>
                                 <td class="data-name">[농축수산] 해양수산부 국가별수산물수출입순위정보</td>
                                 <td>2024-10-22</td>
@@ -190,7 +233,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1255</td>
                                 <td class="data-name">[농축수산] 해양수산부 수산물품목별수출입현황</td>
                                 <td>2024-10-22</td>
@@ -199,7 +247,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1254</td>
                                 <td class="data-name">[농축수산] 한국농수산식품유통공사 KAMIS 주간알뜰장보기 동향 정보</td>
                                 <td>2024-10-14</td>
@@ -208,7 +261,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1253</td>
                                 <td class="data-name">[농축수산] 한국농수산식품유통공사 로컬푸드 배송 가능 지역</td>
                                 <td>2024-10-14</td>
@@ -217,7 +275,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1252</td>
                                 <td class="data-name">[농축수산] 한국농수산식품유통공사 농산물 할당관세(TRQ) 운영현황</td>
                                 <td>2024-10-14</td>
@@ -226,7 +289,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1251</td>
                                 <td class="data-name">[인구, 생활] 제주특별자치도 환경소음측정결과</td>
                                 <td>2024-10-14</td>
@@ -235,7 +303,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1250</td>
                                 <td class="data-name">[소비, 경제] 제주특별자치도 고용동향</td>
                                 <td>2024-10-14</td>
@@ -244,7 +317,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1249</td>
                                 <td class="data-name">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 검색어트랜드내역</td>
                                 <td>2024-10-14</td>
@@ -253,7 +331,12 @@
                                 <td>0</td>
                             </tr>
                             <tr>
-                                <td><img class="star-icon" src="../images/data/star.png" alt=""></td>
+                                <td>
+                                    <label class="star-label">
+                                        <input type="checkbox" class="star-checkbox" hidden>
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                    </label>
+                                </td>
                                 <td>1248</td>
                                 <td class="data-name">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 여행장소</td>
                                 <td>2024-10-14</td>
@@ -273,19 +356,53 @@
                     
                     
                     <div class="pagination-container">
-                        <button class="pagination-button">«</button>
-                        <button class="pagination-button">&lt;</button>
-                        <button class="pagination-button">1</button>
-                        <button class="pagination-button">2</button>
-                        <button class="pagination-button">3</button>
-                        <button class="pagination-button">4</button>
-                        <button class="pagination-button">5</button>
-                        <button class="pagination-button">6</button>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">«</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">&lt;</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden checked>
+                            <span class="pagination-label">1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">5</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">6</span>
+                        </label>
                         <span class="dots">...</span>
-                        <button class="pagination-button">126</button>
-                        <button class="pagination-button">&gt;</button>
-                        <button class="pagination-button">»</button>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">126</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">&gt;</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="pagination" hidden>
+                            <span class="pagination-label">»</span>
+                        </label>
                     </div>
+                    
 
                     <br>
                 </section>

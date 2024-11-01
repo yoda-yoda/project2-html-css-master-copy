@@ -1,153 +1,24 @@
-.info_box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between; 
+* {
+    box-sizing: border-box;
+}
 
-    height: 10%;
+
+/* 메인배너이미지 시작*/
+.main-image {
     width: 100%;
-    
-}
-
-
-#info_box1 {
-    margin-top: 50px;
-
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 430px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-
-#info_image1{
-    width: 52px; height: 52px; display:inline; margin:0px;
-}
-
-#box1_title{
-    display: inline; margin:0px; padding:0px;
-}
-#box1_span{
-    display: block;
-    margin-left: 50px;
-    font-size: 10px;
-    white-space: nowrap;
-}
-
-#info_box2 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 430px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box3 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box4 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box5 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box6 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box7 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box8 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box9 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-#info_box10 {
-    margin-top: 50px;
-    
-    padding: 0px;
-    text-align: center;
-    height: 90px;
-    width: 390px;
-    white-space: nowrap;
-    border-radius: 5px;
-    box-shadow: 1px 1px 1px 0.3px;
-}
-
-
-
-
-
-#info_header {
-
-    white-space: nowrap;
-}
-
-#footer {
-    display : flex;
+    display: flex;
     justify-content: center;
+    margin-bottom: 20px; /* 아래 여백 증가 */
 }
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+/* 메인배너이미지 끝*/
+
+
+
 
 .infographic_container1{
 
@@ -170,24 +41,10 @@
     margin-left: 60px;
     margin-right: 60px;
 }
-
-#info_select {
-
-    border: 1px, solid, black;
-}
-
 .info_input {
     display: inline-block;
     border: 1px, solid, black;
 }
-
-#info_submit {
-    
-    border: 1px, solid, black;
-    display: inline-block;
-    
-}
-
 .info_hangmok {
     
     display: block;
@@ -241,15 +98,75 @@
 }
 
 
-/* 메인배너이미지 */
-.main-image {
+
+
+
+
+.info_box_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between; 
+
+    height: 10%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px; /* 아래 여백 증가 */
+    
 }
 
-.main-image img {
-    width: 100%;
-    height: auto;
+
+.info_box {
+    margin-top: 50px;
+
+    padding: 0px;
+    text-align: center;
+    height: 90px;
+    width: 430px;
+    white-space: nowrap;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0.3px;
 }
+
+#info_image1{
+    width: 52px; height: 52px; display:inline; margin:0px;
+}
+
+#box1_title{
+    display: inline; margin:0px; padding:0px;
+}
+#box1_span{
+    display: block;
+    margin-left: 50px;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+#info_header {
+
+    white-space: nowrap;
+}
+
+#footer {
+    display : flex;
+    justify-content: center;
+}
+
+
+
+#info_select {
+
+    border: 1px, solid, black;
+}
+
+
+
+#info_submit {
+    
+    border: 1px, solid, black;
+    display: inline-block;
+    
+}
+

@@ -91,21 +91,104 @@
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.1s ease;
     cursor: pointer;
+
+    overflow: hidden;
+    position: relative;
+    min-height: 8rem;
 }
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 첫 슬라이드 체크 시 */
+#latest-slide1:checked ~ #latest-data-slide-1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#latest-slide2:checked ~ #latest-data-slide-1 {
+    transform: translateX(-100%);
+}
+
+/* 두 번째 슬라이드 체크 시 */
+#latest-slide2:checked ~ #latest-data-slide-2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#latest-slide1:checked ~ #latest-data-slide-2 {
+    transform: translateX(100%);
+}
+
+
+/* 첫 슬라이드 체크 시 */
+#popular-slide1:checked ~ #popular-data-slide-1 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#popular-slide2:checked ~ #popular-data-slide-1 {
+    transform: translateX(-100%);
+}
+
+/* 두 번째 슬라이드 체크 시 */
+#popular-slide2:checked ~ #popular-data-slide-2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#popular-slide1:checked ~ #popular-data-slide-2 {
+    transform: translateX(100%);
+}
+
+
+/* 슬라이드 전환 버튼 */
+.slide-controls {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.control-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.control-dot:hover {
+    background-color: #888;
+}
+
+
 
 .popular-data:hover, .latest-data:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-}
+}   
 
-.popular-data img, .latest-data img {
-
-    height: auto;
-    padding-right: 10px; /* 오른쪽 패딩 증가 */
-    padding: 5px;
+.slide img {
+    max-width: 100%;
+    height: auto; /* 이미지 비율 유지 */
+    object-fit: contain;
 }
 
 .data-item {
-    font-size: 1rem; /* 더 큰 크기 */
+    font-size: 0.9rem;
     padding: 5px 5px;
 }
 
@@ -122,7 +205,7 @@
 
 .search-container {
     width: 100%;
-    background-color: #e0e0eb !important;
+    background-color: #eceef6 !important;
     padding: 30px 0; /* 패딩 증가 */
     display: flex;
     flex-direction: column;
@@ -131,7 +214,7 @@
 }
 
 .search-bar {
-    background-color: #e0e0eb !important;
+    background-color: #eceef6 !important;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -172,7 +255,7 @@
 }
 
 .search-description {
-    background-color: #e0e0eb !important;
+    background-color: #eceef6 !important;
     font-size: 0.8rem; /* 더 큰 크기 */
     width: 48%; /* 검색바 너비에 맞춤 */
     color: #666;
@@ -236,27 +319,30 @@
     opacity: 0.8; /* 호버 시 불투명도 조정 */
 }
 
-
-
 .data-table {
     width: 100%; /* 테이블 너비 설정 */
     border-collapse: collapse; /* 경계선 합치기 */
+    
 }
 
 .data-table th, .data-table td {
     padding: 15px; /* 셀 패딩 */
-    text-align: left; /* 헤더 및 셀 텍스트 중앙 정렬 */
+    
     border-bottom: 1px solid #ddd; /* 하단 경계선 추가 */
-}
-
-.data-table tr {
     display: flex; /* 플렉스박스 사용 */
     justify-content: space-between; /* 공간을 균등하게 분배 */
 }
 
+.data-table tr {
+    display: flex; /* 플렉스박스 사용 */
+}
+
 .data-table th {
-    min-width: 10px; /* 최소 너비 설정 */
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    min-width: 5px;
+    justify-content: center;
     color: #a6a6a6;
 }
 
@@ -267,7 +353,7 @@
 
 .data-table td {
     min-width: 20px; /* 최소 너비 설정 */
-    
+    text-align: left; /* 헤더 및 셀 텍스트 중앙 정렬 */
 }
 
 
@@ -280,30 +366,37 @@
 
 
 .pagination-container {
-    display: flex; /* 수평으로 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    gap: 5px; /* 버튼 간의 간격 */
+    display: flex;
+    align-items: center;
+    gap: 5px;
     margin-left: 160px;
 }
 
-.pagination-button {
-    background-color: white; /* 기본 배경색 */
-    border: 2px solid transparent; /* 기본 테두리 투명 */
-    border-radius: 50%; /* 동그란 모양 */
-    padding: 10px 15px; /* 버튼 크기 조정 */
-    cursor: pointer; /* 포인터 커서 */
-    font-size: 0.9rem; /* 글씨 크기 */
-    transition: border-color 0.2s, background-color 0.2s; /* 부드러운 전환 */
+.pagination-container input[type="radio"] {
+    display: none; /* 라디오 버튼 숨기기 */
 }
 
-.pagination-button:hover {
-    border-color: #000099; /* 호버 시 테두리 색상 */
+.pagination-label {
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, background-color 0.2s;
+    display: inline-block;
+    text-align: center;
 }
 
-.pagination-button.active {
-    background-color: #000099; /* 클릭 시 남색 배경 */
-    color: white; /* 글씨 색상 */
+.pagination-label:hover {
+    border-color: #000099;
 }
+
+input[type="radio"]:checked + .pagination-label {
+    background-color: #000099;
+    color: white;
+}
+
 
 .dots {
     align-self: center; /* 중앙 정렬 */
@@ -361,4 +454,15 @@
     background-color: #f0f0f0; /* 호버 시 배경색 변경 */
 }
 
+
+
+
+.star-label {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.star-checkbox:checked + .star-icon {
+    content: url("../images/data/star-svgrepo-com-filled.png"); /* 체크 시 채워진 별 이미지로 변경 */
+}
 
