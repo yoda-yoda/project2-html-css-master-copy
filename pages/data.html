@@ -13,7 +13,9 @@
 </head>
 <body>
     <header class="header">
-        <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
+        <a href="../pages/main.html">
+            <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="../pages/main.html">이용안내</a></li>
@@ -21,25 +23,27 @@
                 <li class="dropdown">
                     <a href="../pages/infographic.html">인포그래픽</a>
                     <ul class="submenu">
-                        <li>차트인포그래픽</li>
+                        <li><a href="../pages/infographic.html">차트인포그래픽</a></li>
                         <li>영상인포그래픽</li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    리포트
+                    <a href="../pages/aireport.html">리포트</a>
+                    
                     <ul class="submenu">
-                        <li>AI리포트</li>
-                        <li>정기리포트</li>
+                        <li><a href="../pages/aireport.html">AI리포트</a></li>
+                        <li><a href="../pages/essencereport.html">정기리포트</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    지역빅데이터센터
+                    <a href="../pages/jeju-center.html">지역빅데이터센터</a>
                     <ul class="submenu">
-                        <li>센터소개</li>
+                        <li><a href="../pages/jeju-center.html">센터소개</a></li>
+                        
                         <li>제공데이터</li>
                         <li>데이터검색</li>
-                        <li>분석실예약</li>
-                        <li>교육장예약</li>
+                        <li><a href="../pages/jeju-analysis.html">분석실예약</a></li>
+                        <li><a href="../pages/jeju-classroom.html">교육장예약</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -120,7 +124,7 @@
                             <input type="radio" name="popular-slider" id="popular-slide2" hidden>
                             <div class="slide" id="popular-data-slide-2">
                                 <img src="../images/data/data-slide2.png" alt="slide-img-2">
-                                <div class="data-item">[소비, 경제] 최근 이슈가 된 소셜 빅데이터를 통해 알아보는..
+                                <div class="data-item">[소비, 경제] 최근 이슈가 된 소셜 빅데이터를 통해..
                                     <p>2024-10-14 | 소상공인 경제 동향(BSI) 현황에 대한 데..</p>
                                 </div>
                             </div>
@@ -148,7 +152,7 @@
                             <input type="radio" name="latest-slider" id="latest-slide2" hidden>
                             <div class="slide" id="latest-data-slide-2">
                                 <img src="../images/data/data-slide2.png" alt="slide-img-2">
-                                <div class="data-item">[소비, 경제] 최근 이슈가 된 소셜 빅데이터를 통해 알아보는..
+                                <div class="data-item">[소비, 경제] 최근 이슈가 된 소셜 빅데이터를 통해..
                                     <p>2024-10-14 | 소상공인 경제 동향(BSI) 현황에 대한 데..</p>
                                 </div>
                             </div>
@@ -175,21 +179,16 @@
                     </div>
                     
                     <hr class="aside-hr">
-                    <br>
-                    <br>
-                    <hr>
                     
                     <div class="table-header">
                         <span class="item-count">총 1257 개 항목</span>
                         <div class="data-dropdown">
-                            <button class="dropdown-button"> v 정렬</button>
-                            <ul class="data-dropdown-list">
-                                <li><a href="#">최신순</a></li>
-                                <li><a href="#">조회순</a></li>
-                                <li><a href="#">즐겨찾기순</a></li>
-                            </ul>
-                        </div>
-                        
+                            <select class="dropdown-select">
+                              <option value="latest">최신순</option>
+                              <option value="views">조회순</option>
+                              <option value="favorites">즐겨찾기순</option>
+                            </select>
+                        </div> 
                     </div>
                     <table class="data-table">
                         <thead>
@@ -212,7 +211,15 @@
                                     </label>
                                 </td>
                                 <td>1257</td>
-                                <td class="data-name">[소비, 경제] 소상공인시장진흥공단 소상공인 경기동향(BSI) 현황</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[소비, 경제] 소상공인시장진흥공단 소상공인 경기동향(BSI) 현황</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>52</td>
@@ -226,7 +233,15 @@
                                     </label>
                                 </td>
                                 <td>1256</td>
-                                <td class="data-name">[농축수산] 해양수산부 국가별수산물수출입순위정보</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[농축수산] 해양수산부 국가별수산물수출입순위정보</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-22</td>
                                 <td>제주데이터허브</td>
                                 <td>28</td>
@@ -240,7 +255,15 @@
                                     </label>
                                 </td>
                                 <td>1255</td>
-                                <td class="data-name">[농축수산] 해양수산부 수산물품목별수출입현황</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[농축수산] 해양수산부 수산물품목별수출입현황</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-22</td>
                                 <td>제주데이터허브</td>
                                 <td>23</td>
@@ -254,7 +277,16 @@
                                     </label>
                                 </td>
                                 <td>1254</td>
-                                <td class="data-name">[농축수산] 한국농수산식품유통공사 KAMIS 주간알뜰장보기 동향 정보</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[농축수산] 한국농수산식품유통공사 KAMIS 주간알뜰장보기 동향 정보</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
+                            
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>17</td>
@@ -268,7 +300,15 @@
                                     </label>
                                 </td>
                                 <td>1253</td>
-                                <td class="data-name">[농축수산] 한국농수산식품유통공사 로컬푸드 배송 가능 지역</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[농축수산] 한국농수산식품유통공사 로컬푸드 배송 가능 지역</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>14</td>
@@ -282,7 +322,15 @@
                                     </label>
                                 </td>
                                 <td>1252</td>
-                                <td class="data-name">[농축수산] 한국농수산식품유통공사 농산물 할당관세(TRQ) 운영현황</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[농축수산] 한국농수산식품유통공사 농산물 할당관세(TRQ) 운영현황</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>11</td>
@@ -296,7 +344,15 @@
                                     </label>
                                 </td>
                                 <td>1251</td>
-                                <td class="data-name">[인구, 생활] 제주특별자치도 환경소음측정결과</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[인구, 생활] 제주특별자치도 환경소음측정결과</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>27</td>
@@ -308,9 +364,18 @@
                                         <input type="checkbox" class="star-checkbox" hidden>
                                         <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
                                     </label>
+                                    
                                 </td>
                                 <td>1250</td>
-                                <td class="data-name">[소비, 경제] 제주특별자치도 고용동향</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[소비, 경제] 제주특별자치도 고용동향</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>23</td>
@@ -324,7 +389,15 @@
                                     </label>
                                 </td>
                                 <td>1249</td>
-                                <td class="data-name">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 검색어트랜드내역</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 검색어트랜드내역</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>25</td>
@@ -338,7 +411,15 @@
                                     </label>
                                 </td>
                                 <td>1248</td>
-                                <td class="data-name">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 여행장소</td>
+                                <td class="data-name">
+                                    <div class="data-name-container">
+                                        <span class="data-name-content">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 여행장소</span>
+                                        <span class="data-name-label">N</span>
+                                    </div>
+                                    <div class="data-file-label">
+                                        <span>FILE</span>
+                                    </div>
+                                </td>
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>47</td>

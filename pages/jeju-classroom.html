@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주데이터허브</title>
+    <link rel="icon" href="../images/components/favicon.ico">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/jeju.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../pages/main.html">
+            <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../pages/main.html">이용안내</a></li>
+                <li><a href="../pages/data.html">데이터</a></li>
+                <li class="dropdown">
+                    <a href="../pages/infographic.html">인포그래픽</a>
+                    <ul class="submenu">
+                        <li><a href="../pages/infographic.html">차트인포그래픽</a></li>
+                        <li>영상인포그래픽</li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/aireport.html">리포트</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="../pages/aireport.html">AI리포트</a></li>
+                        <li><a href="../pages/essencereport.html">정기리포트</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/jeju-center.html">지역빅데이터센터</a>
+                    <ul class="submenu">
+                        <li><a href="../pages/jeju-center.html">센터소개</a></li>
+                        
+                        <li>제공데이터</li>
+                        <li>데이터검색</li>
+                        <li><a href="../pages/jeju-analysis.html">분석실예약</a></li>
+                        <li><a href="../pages/jeju-classroom.html">교육장예약</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    정보공개
+                    <ul class="submenu">
+                        <li>공지사항</li>
+                        <li>FAQ</li>
+                        <li>Q&A</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+
+    </header>
+
+    <div class="main-image">
+        <img src="../images/jeju/jejucenter-banner.png" alt="Main Visual">
+    </div>
+
+
+    <div class="wrapper">
+        <div class="container">
+
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="../pages/jeju-center.html" class="">센터소개</a>
+                    </li>
+                    <li>
+                        <a href="" class="">제공데이터</a>
+                    </li>
+                    <li>
+                        <a href="" class="">데이터검색</a>
+                    </li>
+                    <li>
+                        <a href="../pages/jeju-analysis.html" class="">분석실예약</a>
+                    </li>
+                    <li class="actived">
+                        <a href="../pages/jeju-classroom.html">교육장예약</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="main-content">
+                <div class="main-header">
+                    <h1>교육장예약</h1>
+                </div>
+                <div class="calendar-wrap">
+                    <h3>예약 현황</h3>
+                    <div class="btn-group">
+                        <button class="btn-h32 btn-checkd">전체</button>
+                        <button class="btn-h32">1강의실</button>
+                        <button class="btn-h32">2강의실</button>
+                    </div>
+                    <ul>
+                        <li class="dot-green">예약 가능</li>
+                        <li>예약 불가</li>
+                        <li class="dot-red">임시 휴관</li>
+                    </ul>
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <h3>2024.11</h3>
+                            <div class="btn-group">
+                                <button class="btn-prev"></button>
+                                <button class="btn-next"></button>
+                            </div>
+                        </div>
+                        <table id="calendar">
+                            <thead>
+                                <tr>
+                                    <th>일(Sun)</th>
+                                    <th>월(Mon)</th>
+                                    <th>화(Tue)</th>
+                                    <th>수(Wed)</th>
+                                    <th>목(Thu)</th>
+                                    <th>금(Fri)</th>
+                                    <th>토(Sat)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="past">
+                                        <span>27</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                    <td class="past">
+                                        <span>28</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td class="past">
+                                        <span>29</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td class="past">
+                                        <span>30</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td class="past">
+                                        <span>31</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td class="past">
+                                        <span>NOV 1</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                        
+                                    </td>
+                                    <td class="past">
+                                        <span>2</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="past">
+                                        <span>3</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                    <td class="past">
+                                        <span>4</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>5</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>6</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>7</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>8</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                        
+                                    </td>
+                                    <td>
+                                        <span>9</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span>10</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                    <td>
+                                        <span>11</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>12</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>13</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>14</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>15</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                        
+                                    </td>
+                                    <td>
+                                        <span>16</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span>17</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                    <td>
+                                        <span>18</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>19</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>20</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>21</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>22</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                        
+                                    </td>
+                                    <td>
+                                        <span>23</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>
+                                        <span>24</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                    <td>
+                                        <span>25</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>26</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>27</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>28</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <span>29</span>
+                                        <ul class="bu-dot">
+                                            <li class="lecture-5 dot-green">1강의실</li>
+                                            <li class="lecture-6 dot-green">3강의실</li>
+                                        </ul>
+                                        
+                                    </td>
+                                    <td>
+                                        <span>30</span>
+                                        <ul class="bu-dot"></ul>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="section-guide guide-classroom">
+                    <h5 class="caption">교육장 이용안내</h5>
+                    <p>교육장 예약은 전화/이메일로 문의 주시기 바랍니다.</p>
+                    <br>
+                    <ul>
+                        <li>
+                            <i></i>
+                            064-720-3743
+                        </li>
+                        <li>
+                            <i></i>
+                            kimjy@jejutp.or.kr
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+            </main>
+
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <hr>
+            <img src="../images/components/datahub-logo-removebg-preview.png" alt="JEJU Data Hub Logo">
+            <div class="footer-info">
+                
+                <p>(63309) 제주특별자치도 제주시 청사로 10 제주 데이터허브센터 | 064-710-3933 | jejudatahub@email.com</p>
+                <p>&copy; Jeju Data Hub, 2020</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

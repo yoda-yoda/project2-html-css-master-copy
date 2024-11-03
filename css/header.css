@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 135px;
+    padding: 15px 270px;
 }
 
 .header h1 {
@@ -11,7 +11,7 @@
 }
 
 .header img {
-    width: 18%;
+    width: 60%;
     display: flex;
     justify-content: center;
     object-fit: contain;
