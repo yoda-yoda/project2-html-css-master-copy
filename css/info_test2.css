@@ -1,13 +1,12 @@
 * {
     box-sizing: border-box;
-    
 }
 
-/* body{ /* 현재수정중 
+body{ /* 현재수정중 */
     display: flex;
     align-items: center;
     flex-direction: column;
-} */
+}
 
 /* 메인배너이미지 시작*/
 .main-image {
@@ -24,41 +23,18 @@
 }
 /* 메인배너이미지 끝*/
 
-.sidebar { /* 요기4번째*/
+
+
+.info_leftMenu_container{ /* 현재수정중 */
     grid-area: sidebar;
+    display: inline-block;
+    
 }
 
-.sidebar ul {
-    list-style: none;
-}
 
-.sidebar ul li {
-    font-size: 1.1rem;
-    margin-left: 0.1rem;
-    padding: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #e4e4e4;
-    color: #999999;
-}
-
-.sidebar ul li:hover {
-    color: black;
-}
-
-.sidebar-menu li.actived {
-    border-bottom: 1px solid #224da0 !important;
-    font-weight: 700 !important;
-    color: #224da0 !important;
-}
-
-.main-content {
-    grid-area: main;
+.info_leftMenu{
     display: flex;
     flex-direction: column;
-    gap: 20px; 
-    margin-left: 1.5rem;
 }
 
 
@@ -72,40 +48,18 @@
 }
 
 
-.info_leftMenu_container{ /* 현재수정중 */
-    grid-area: sidebar;
-    display: inline-block;
-    
-}
-
-
-.info_leftMenu{    
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-
 .info_search {
     display : inline-block;
 }
 
 
-.infographic_container2{ /* 현재 수정중 */ /* 요기도고침3번째임 5번째는 reset.css랑 html aside랑main그것고친것.*/
-    grid-area: main;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; 
-    margin-left: 1.5rem;
-    
-    /* display : inline-block;
+.infographic_container2{ /* 현재 수정중 */
+    display : inline-block;
     margin-top: 20px;
-    margin-left: 60px; 
+    margin-left: 60px;
     margin-right: 60px;
-    width: 100%;
-    height:100%;  */
+    width: 80%;
+    height:100%; 
 } 
 
 .info_68{
@@ -116,7 +70,7 @@
 
 .chart_info1 {
     border-bottom: 1px solid #224da0;
-    width: auto;
+    width: 180px;
     height: 45px;
     margin-top:10px;
     display: inline-block;
@@ -165,22 +119,22 @@
 }
 
 
-.info_box_grid { /* 수정중 */
+.info_box_grid {
     display: grid;
     justify-content: space-between; 
-    grid-template-columns: repeat(2, 460px);
+    grid-template-columns: repeat(2, 530px);
     grid-template-rows: repeat(5, 90px);
-    gap:30px;
+    gap:35px;
 }
 
-.info_box { /* 수정중 */
-    padding: 14px; 
+
+.info_box {
+    padding: 20px;
     border-radius: 4px;
     background-color:#fff;
-    border-radius: 4px;
-    background-color: #fff;
     box-shadow: 0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12),0 1px 3px 0 rgba(0,0,0,.2);
     display: flex;
+    width: 90%;
     align-items:center;
 } 
 
@@ -230,14 +184,12 @@
     display: inline;
     margin-right: 15px;
     font-size: 12px;
-    color: #999999;
 }
 
 #box_span2{
     display: inline;
     margin-left: 15px;
     font-size: 12px;
-    color: #999999;
 
 }
 
@@ -246,7 +198,6 @@
     display: block;
     margin-left: 93px;
     font-size: 12px;
-    color: #999999;
 
 }
 

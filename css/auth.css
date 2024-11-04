@@ -1,0 +1,170 @@
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+    overflow: hidden;
+    width: 100%;
+}
+
+.auth-hr {
+    border: none;
+    height: 1px;
+    background-color: #e1e1e1 !important;
+    margin: 15px 0;
+}
+
+.login-container {
+    width: 400px;             
+    max-width: 90%;   
+    padding: 20px;
+}
+
+.join-container {
+    width: 800px;
+}
+
+
+.form-title {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.i-vertical>label:not(.checkbox-container) {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.i-vertical>input {
+    width: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 9px 16px 8px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    line-height: 1.5;
+
+}
+
+.i-vertical {
+    margin-top: 20px;
+}
+
+.login-btn {
+    display: flex;                   
+    justify-content: center;        
+    align-items: center;            
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid #224da0;
+    background-color: #224da0;
+    color: #fff;
+    width: 100%;
+    height: 48px;
+}
+
+.contents-footer {
+    clear: both;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.buttons {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e1e1;
+    color: #666;
+    text-align: center;
+}
+
+.buttons>* {
+    position: relative;
+    padding-right: 20px;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+.nav-step {
+    clear: both;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.nav-step ol {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-step ol li {
+    box-sizing: border-box;
+    position: relative;
+    width: 110px;
+    padding-top: 32px;
+    font-size: 12px;
+    color: #333;
+}
+
+.nav-step ol>* {
+    display: table-cell;
+}
+
+.nav-step ol li span {
+    content: "";
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    width: 42px;
+    height: 42px;
+    margin-left: -21px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 10;
+}
+
+.nav-step ol li.active span {
+    border: 2px solid #224da0;
+    font-weight: 700;
+    color: #224da0;
+}
+
+.nav-step ol li:first-child:before {
+    left: 50%;
+}
+
+.nav-step ol li:last-child:before {
+    right: 50%;
+}
+
+
+.nav-step ol li:before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #ddd;
+    z-index: 1;
+}

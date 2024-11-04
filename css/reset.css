@@ -6,9 +6,9 @@
 }
 
 /* Grid Layout */
-.container {
+.container { 
     display: grid;
-    grid-template-columns: 1fr 4.5fr;
+    grid-template-columns: 1fr 4.5fr !important;  
     grid-template-areas: 
         "sidebar main";
     gap: 20px;

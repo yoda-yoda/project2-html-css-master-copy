@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" href="../images/components/favicon.ico">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/data.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/info_test2.css">
+    
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 위쪽 -->
+    <!-- 헤더 여기에 넣고 -->
+    <header class="header">
+        <a href="../pages/main.html">
+            <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../pages/main.html">이용안내</a></li>
+                <li><a href="../pages/data.html">데이터</a></li>
+                <li class="dropdown">
+                    <a href="../pages/infographic.html">인포그래픽</a>
+                    <ul class="submenu">
+                        <li><a href="../pages/infographic.html">차트인포그래픽</a></li>
+                        <li><a href="../pages/infographic-media.html">영상인포그래픽</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/aireport.html">리포트</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="../pages/aireport.html">AI리포트</a></li>
+                        <li><a href="../pages/essencereport.html">정기리포트</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../pages/jeju-center.html">지역빅데이터센터</a>
+                    <ul class="submenu">
+                        <li><a href="../pages/jeju-center.html">센터소개</a></li>
+                        
+                        <li>제공데이터</li>
+                        <li>데이터검색</li>
+                        <li><a href="../pages/jeju-analysis.html">분석실예약</a></li>
+                        <li><a href="../pages/jeju-classroom.html">교육장예약</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    정보공개
+                    <ul class="submenu">
+                        <li>공지사항</li>
+                        <li>FAQ</li>
+                        <li>Q&A</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button>로그인</button>
+            <button>회원가입</button>
+        </div>
+
+    </header>
+    <!-- 헤더끝 -->
+
+
+    <div class="main-image">
+        <img src="../images/infographic/infographic-banner.png" alt="Main Visual">
+    </div>
+    <!-- 인포그래픽 이미지 배너-->
+
+
+
+
+
+    <!-- infographic_container1 시작 -->
+
+    <section class="infographic_container1"> 
+
+        <div class="info_leftMenu">
+        <a class="chart_info1" href="../pages/infographic.html">차트인포그래픽</a>
+ 
+        <a class="video_info" href="../pages/infographic-media.html">영상인포그래픽</a>
+        </div>
+
+
+
+    <!-- infographic_container2 시작 -->
+
+        <div class="infographic_container2">
+        
+
+
+            <section id="test1" style="display: flex" >
+
+            <div class="chart_info2">
+                차트인포그래픽
+            </div>
+
+            <div class="info_search">
+            <select id="info_select" name="example">
+                <option value="value1">제목</option>
+                <option value="value2">내용</option>
+                <option value="value3" selected>제목+내용</option>
+            </select>
+            <input id="info_input" type="text" placeholder="검색어 입력">
+            <button id="info_submit">검색</button>
+            </div>
+
+            </section>
+
+
+
+            
+            <div class="info_68">
+                총 68개 항목
+            </div>
+
+            <hr>
+
+            <div style="height: 40px">
+            </div>
+
+
+            <div class="info_box_grid">
+
+                <a href="#" class="info_box"> 
+                        <img id="info_image" src="https://www.jejudatahub.net/img/ico-chart-line-multi.3323751c.png">
+                        <div>
+                            <h2 id= "box_title">서귀포시 직영관광지 관람객수 추이(월간) <br></h2>
+                            <span id="box_span1"> 2023.11.08 </span>
+                            <span id="box_span2"> 서귀포시 직영관광지의 관람객수를 월별로 알아...</span> 
+                        </div>
+                </a>
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKRWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowNDFjOGMzZi04MTgzLWI0NDEtOWZmOS03YmQxOTMyNmQ4NmQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1YWZlMjg5Ni1hNDlhLTY1NDgtOTA0NC03ZDc1Mzg5ZDgyNDAiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiBzdEV2dDp3aGVuPSIyMDIxLTEwLTA2VDE1OjM3OjAzKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVhZmUyODk2LWE0OWEtNjU0OC05MDQ0LTdkNzUzODlkODI0MCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzZlNmM0NzctODgwNC1lZTQzLWI3YWEtYmI0MzQ5NzE4YzAzIi8+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjVENTQ2MTVBMDQyOTUxMjhDREI4NDVFQzlDMDJFNjg5PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+TJ93YwAABMJJREFUaIHtWFtsFFUY/md2ul2WrS2xtJSWykLb7TUQLoXawIv6BvJgMFGeSERDiiZeGqK+IknTRGKUeGnUGENMIGpMePLyAiyl1YLtsuzS0ktqLZTWtBuW7XZ29hwfzvT07Jmzs7OX2E3s97CZ+c8/3/nO///nthLGGAyQufcPfFcRQoAxxhifGbpCfgMLsxhjYE1fjtwiTrrv9ucvkocT3kWM8QqvdDGWtDfdw6hMIEvv/azvKpUBZ4auLMVjQ/Mz5F1XQ6UQNQIpIh04FT4J9mOMFeEQVlQCvF7fCgAKa9qyvvivxyEAsElSHON9pZXPVmxL6HcpHqMdLcZjPcMDVH9CQO2yUnPkUs2RSwDgkJVXaneliBwZNpsE3SgsByPEKaOIaJolv3OBXhIKMz/i8X7LAaDxUxHq9nuplXPS+VSkESfazDkBgLQUj3X7e6mVeHBOAAAY4w/v9LKJp8VFk4Ex1uNHMnHvp6MsxavXowDwxdOO1HGhsJq3LPiEsFoHFmE2PVJCQ6jL7wWAdTblrca2rOhofgHgVP3epOpogRXalHca28yJjtfs3LyuiL4mxE5FGqkvDrS+zvquYdD9n6vY1lpayXnqdBxRZ1ObXVZ+uT/WP/e3kb2+uPSF6gajfYXuXOBGRItRItbjYfRxz8hN8lxid3R49DCR+iUgVcwPNi0I6fhUkIlEwE0nK7BUKOxswi8WmHhanT0WkWO6HM/ZHNPlWey6/dc1hHJD91GgT0XxLr83oqnZ0n0+PBBeZvlqdDArugvjvrmlCHl22JRTyxM5E7rLUyMT4QXyrEjy28yaKJhkdHV5o2FfkWLnWq89nBycf6BrkaTTze1sK193lIvgmLtlq6uEvg7Oz1yeGta/BHiP27Y5Oo6L4JlN7v0bqwBgIrxwYdxH7fwRgKNjuZxKAcvbWLzxYHn1Z8MD5lxgXI0J15sN+yFxi2GRjAtIZoVc5DMJJOtcujq677BcFF23vRrWp9G7Te2yLEOSlV1XZ5eVzqY2IRcAnG5u3+wsAoDOZa4U6sw9hEimLqGMs9x3IO/WOw6pN0bruyLk+2D/V3T5fQrILXIcugwQ0VSUpCmrO0+WUBH6ONgXjWsA4FLsJz27uTP+6qQVIfTpyMCCGuXsdtl20rPHtXxQWIXIfT3653TkkdHuUuwdnr0KsxX9p+K+nwwEQ3NGu122dXhanQovxqo4FaFvxwZnFsMAUOEsesnd7JDTGNiv98f6RNdOmySdqN31ZKFT+FXqmlMROn+333hCU2T5+PadZY715p///s/0z9Ojgo5BetndzJ4a0xOXTBbXx+EtdS0lZcamYGjuh8mAkP1QVd2ODeUmtGbiVKSdv/uHuSwO7F+M04uPvhkdRCLmg+VPHSirtsjJizOR5VQKOjx77LLy42TwTmhWSFfpfGJmMUwPlSx2bNh0qKrWoixenBVZrPHG7NRvD8at9LHVVXLM3ZKWrARxyZQJZbGYCC98N3FbmEEAKC10vla3m7WwJ18W7CmYF0fASkwpi0VIjfbcu7UU16jFuKJmK45KBACLstJFWuIECqgs9l7BIrM7RgZY/SOTCfJaXG4Ky/jXPUHKK5Y58jpya+IyxZq4TLF2b80U/wL33vO+2/G2oAAAAABJRU5ErkJggg==">
+                    <div>
+                        <h2 id= "box_title">서귀포시 감귤 종류별 면적 및 생산량 추이(연간) <br></h2>
+                        <span id="box_span1"> 2023.11.08 </span>
+                        <span id="box_span2"> 서귀포시 생산하는 감귤 종류별별로 면적...</span> 
+                    </div>
+                </a>
+
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="https://www.jejudatahub.net/img/ico-chart-bubble.9e90bc20.png">
+                    <div>
+                        <h2 id= "box_title">프렌차이즈 주요 업종별 매출액, 인건비, 종사자 ... <br></h2>
+                        <span id="box_span1"> 2021.10.28 </span>
+                        <span id="box_span2"> -프렌차이즈 주요 업종별로 매출액, 인건비, 종...</span>
+                        <span id="box_span3"> -x축: 매출액(백만원), y축: 인건비(백만원), 버블...</span> 
+                    </div>
+                </a>
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKRWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowNDFjOGMzZi04MTgzLWI0NDEtOWZmOS03YmQxOTMyNmQ4NmQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1YWZlMjg5Ni1hNDlhLTY1NDgtOTA0NC03ZDc1Mzg5ZDgyNDAiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiBzdEV2dDp3aGVuPSIyMDIxLTEwLTA2VDE1OjM3OjAzKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVhZmUyODk2LWE0OWEtNjU0OC05MDQ0LTdkNzUzODlkODI0MCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzZlNmM0NzctODgwNC1lZTQzLWI3YWEtYmI0MzQ5NzE4YzAzIi8+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjVENTQ2MTVBMDQyOTUxMjhDREI4NDVFQzlDMDJFNjg5PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+TJ93YwAABMJJREFUaIHtWFtsFFUY/md2ul2WrS2xtJSWykLb7TUQLoXawIv6BvJgMFGeSERDiiZeGqK+IknTRGKUeGnUGENMIGpMePLyAiyl1YLtsuzS0ktqLZTWtBuW7XZ29hwfzvT07Jmzs7OX2E3s97CZ+c8/3/nO///nthLGGAyQufcPfFcRQoAxxhifGbpCfgMLsxhjYE1fjtwiTrrv9ucvkocT3kWM8QqvdDGWtDfdw6hMIEvv/azvKpUBZ4auLMVjQ/Mz5F1XQ6UQNQIpIh04FT4J9mOMFeEQVlQCvF7fCgAKa9qyvvivxyEAsElSHON9pZXPVmxL6HcpHqMdLcZjPcMDVH9CQO2yUnPkUs2RSwDgkJVXaneliBwZNpsE3SgsByPEKaOIaJolv3OBXhIKMz/i8X7LAaDxUxHq9nuplXPS+VSkESfazDkBgLQUj3X7e6mVeHBOAAAY4w/v9LKJp8VFk4Ex1uNHMnHvp6MsxavXowDwxdOO1HGhsJq3LPiEsFoHFmE2PVJCQ6jL7wWAdTblrca2rOhofgHgVP3epOpogRXalHca28yJjtfs3LyuiL4mxE5FGqkvDrS+zvquYdD9n6vY1lpayXnqdBxRZ1ObXVZ+uT/WP/e3kb2+uPSF6gajfYXuXOBGRItRItbjYfRxz8hN8lxid3R49DCR+iUgVcwPNi0I6fhUkIlEwE0nK7BUKOxswi8WmHhanT0WkWO6HM/ZHNPlWey6/dc1hHJD91GgT0XxLr83oqnZ0n0+PBBeZvlqdDArugvjvrmlCHl22JRTyxM5E7rLUyMT4QXyrEjy28yaKJhkdHV5o2FfkWLnWq89nBycf6BrkaTTze1sK193lIvgmLtlq6uEvg7Oz1yeGta/BHiP27Y5Oo6L4JlN7v0bqwBgIrxwYdxH7fwRgKNjuZxKAcvbWLzxYHn1Z8MD5lxgXI0J15sN+yFxi2GRjAtIZoVc5DMJJOtcujq677BcFF23vRrWp9G7Te2yLEOSlV1XZ5eVzqY2IRcAnG5u3+wsAoDOZa4U6sw9hEimLqGMs9x3IO/WOw6pN0bruyLk+2D/V3T5fQrILXIcugwQ0VSUpCmrO0+WUBH6ONgXjWsA4FLsJz27uTP+6qQVIfTpyMCCGuXsdtl20rPHtXxQWIXIfT3653TkkdHuUuwdnr0KsxX9p+K+nwwEQ3NGu122dXhanQovxqo4FaFvxwZnFsMAUOEsesnd7JDTGNiv98f6RNdOmySdqN31ZKFT+FXqmlMROn+333hCU2T5+PadZY715p///s/0z9Ojgo5BetndzJ4a0xOXTBbXx+EtdS0lZcamYGjuh8mAkP1QVd2ODeUmtGbiVKSdv/uHuSwO7F+M04uPvhkdRCLmg+VPHSirtsjJizOR5VQKOjx77LLy42TwTmhWSFfpfGJmMUwPlSx2bNh0qKrWoixenBVZrPHG7NRvD8at9LHVVXLM3ZKWrARxyZQJZbGYCC98N3FbmEEAKC10vla3m7WwJ18W7CmYF0fASkwpi0VIjfbcu7UU16jFuKJmK45KBACLstJFWuIECqgs9l7BIrM7RgZY/SOTCfJaXG4Ky/jXPUHKK5Y58jpya+IyxZq4TLF2b80U/wL33vO+2/G2oAAAAABJRU5ErkJggg==">
+                    <div>
+                        <h2 id= "box_title">읍면동별 유동인구에 따른 음식물 쓰레기 배출량... <br></h2>
+                        <span id="box_span1"> 2021.10.28 </span>
+                        <span id="box_span2"> -읍면동별 유동인구에 따른 음식물 쓰레기 배출...</span>
+                        <span id="box_span3"> -출처: 제주빅데이터센터</span> 
+                    </div>
+                </a>
+
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAALEmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMjhUMTQ6MTU6NTErMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMjhUMTQ6MTU6NTErMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoxYTFlMWFmNC1lNjFkLWNhNDktYWQzNS1lZDJiMTAzMTMyNTAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZTQ5NWQyODUtOGUwNy1kYjRhLWEzN2ItY2VlODk5MmJiOWE3IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2YmQyYmJhYS0wNjc4LTQ0NDktOTQxZC0zNzcwMzdmMzJiM2UiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTU6NDU6MzErMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NTliZjc5YTctM2E4Ny1jODQ1LTljYWMtMWIwMGYwMTQ4MGI1IiBzdEV2dDp3aGVuPSIyMDIxLTEwLTI4VDE0OjE1OjUxKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNvbnZlcnRlZCIgc3RFdnQ6cGFyYW1ldGVycz0iZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iZGVyaXZlZCIgc3RFdnQ6cGFyYW1ldGVycz0iY29udmVydGVkIGZyb20gYXBwbGljYXRpb24vdm5kLmFkb2JlLnBob3Rvc2hvcCB0byBpbWFnZS9wbmciLz4gPHJkZjpsaSBzdEV2dDphY3Rpb249InNhdmVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOmU0OTVkMjg1LThlMDctZGI0YS1hMzdiLWNlZTg5OTJiYjlhNyIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0yOFQxNDoxNTo1MSswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1OWJmNzlhNy0zYTg3LWM4NDUtOWNhYy0xYjAwZjAxNDgwYjUiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIHN0UmVmOm9yaWdpbmFsRG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIvPiA8cGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8cmRmOkJhZz4gPHJkZjpsaT41RDU0NjE1QTA0Mjk1MTI4Q0RCODQ1RUM5QzAyRTY4OTwvcmRmOmxpPiA8L3JkZjpCYWc+IDwvcGhvdG9zaG9wOkRvY3VtZW50QW5jZXN0b3JzPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtPgJwYAAAFhSURBVGiB7Ze7DcIwEIYPlFHSZRgqhqDODnSZhIph3LFLKIycy/l3/MBIZ+GvQTin838vOzmt60oeZ/szXh7j5bGYz+oJ2g7Olohu9ysRzROd3ZL0+3pexSr2C1Y3WYshKwtYDVgNZzHe0jwhX1iaz8D/uLjt/tb5LgJCybG6dnbQiJvm6+MunT4nMdWfzF58X9oXhVhSMvx9Ea8fbMa+W09BFvNxqT2O1H1T7RJJlZfIEHogSsRTZeE95/i9uoPW4diZFhorq6tcWXyw+Pil4GT3cSKbOnfrJJbC0lQp/kqdbnf4gPJbT0wFPJ1Ie7C6+06WIjT/8IDyC6I7d62UQuNdodtdnwo17v7qYqwcbF0qx1oX1eKCX1CQ6Dvz8YlN4TcbiOrMdXGlqD5K4gOR9eEYHQhOdDhUl7WLK6W1gciaAEHWQAh+/r5Zly6ulNYGQtBvCEwXV4rqgVCduS6ulDeu5JnjJctAJgAAAABJRU5ErkJggg==">
+                    <div>
+                        <h2 id= "box_title">성별 농가 인구 비교(연간) <br></h2>
+                        <span id="box_span1"> 2021.10.28 </span>
+                        <span id="box_span2"> -성별 농가 인구 비교</span>
+                        <span id="box_span3"> -출처: KOSIS 국가통계포털</span> 
+                    </div>
+                </a>
+
+
+                
+
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKRWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMDZUMTQ6MDE6MjIrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMDZUMTQ6MDE6MjIrMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDphOGUyOTFjMi00NWQ4LTlhNDUtYWVmZC0yM2Y5YzI5MGI0MDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZGQ2ZTczZWUtZGY2ZS0xMjRmLTljZDQtNTZkMmIwYTIyOTg4IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1OTE0ZmJkOC05YTdhLTU2NDItODM4NS00ZTk4NDdjZDFjM2EiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTQ6MDE6MjIrMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZGQ2ZTczZWUtZGY2ZS0xMjRmLTljZDQtNTZkMmIwYTIyOTg4IiBzdEV2dDp3aGVuPSIyMDIxLTEwLTA2VDE0OjAxOjIyKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5MTRmYmQ4LTlhN2EtNTY0Mi04Mzg1LTRlOTg0N2NkMWMzYSIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzZlNmM0NzctODgwNC1lZTQzLWI3YWEtYmI0MzQ5NzE4YzAzIi8+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjVENTQ2MTVBMDQyOTUxMjhDREI4NDVFQzlDMDJFNjg5PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+srTcRgAABPNJREFUaIHtWG1MW1UYfm+/oS3QQTPXKussFmNH0akDRWdczFAzE5MNosIWEvEjUdjCyJS4H/uxBR1uuh/+UHEfSlGbkZjMGDMNZkZ0H9EAG9nA4YqyZYSy0lLW715/3HF6eu+5Hy1XJerz65zzvvc5z3nPOe97WoqmaeBAgVqG+iFD/VDGqKF+KOSpJPumKegF6OsGRycjTJuiaXr/SMZUO5xAETUQRtMC2JoAIOSpZEZJgpjpr88l9HWDvFIIM5KlcaHCOxlxWNDGlovb8HCS58UpycFn2ViUN/lYC2aBdyu4IKyDiIy4NB2cODYwy7Q3PVh0dPtKAl80TjNOaiUFAH0/zkbjaUlpfUxE0DJZXan60nzROF3cMAwAOjUVidMAMON2adUUm0+rpm4r0QAA47TMqEJOILBv7C2mOUAnEwfhlJ4+46taW4K6O5w868WdePXxQaqfRKiEzfPR1JO7x38ev8F077Xnf7XbrtfybiKvum0fTn70zQzfZ5trio5sW8kdJ9Ot6/j1lwVFT1cX9rTZmHbjAe8XpwJMe409//vOOyTRoZOg1yqmPqnATcu3nJuPppg2NxWQo7DGns805qOpxgNeNN6w34u4kI+4OgB46b0/3CevE00AUHtPQV/HqizoGHBTIZDWiCByb0OeymceNqFulUMvwJWhTiDzhcPJN/edb225s3iZlujAXDGpdKIg0MkCqTlPIpa2OpnpRBLU+1/72g9fYeJBUdDVZH35CUJ2ReCNXSROlzQME00+t0uHVRJJdMTrhcB3N8ixc75yQYBLwIEcu4npGGqjpeHLxx1E1PUPz6H2odZSFCadmjqMJXTcTYjut2vpmesfMuGmupoiopsQ3e23aFDb84MfN+Fd3A1BpFYAT+yAZ3PJW2EuVE0HEkybePqK9Erih3/LuQMAn9vFZ2KVSkl0OjXV227jju/dYsnlUcHA/uLI1GwCdfM0iukeXmnidJAZxMBnLqWCfPkZiOc7z2s3y3PnVoswF+AHhbeS6QqMRnUknIytMvP5oEomkj4ZtLfdJbGiSH69i6wySzqps/6XCqPMi5UXMq9VXki6E6LwBRPD3vDv0/FYIqVRKUrNapctr6RgseS5f9970v9Gz1VUT/hgLlTtbbQ894hJ2I2IrM9cLEFv6rz83TlC+RfGoxXGz3fa8vmLAhfZiTs2MNt0cCJbWTgOtZay3igCyEJc94mZ7d2TRFO5Vff65uWPVRpNBqU/lPx2aO6tvqmLkxGi8zvPW1+oFXoLZy1uZi5hax7h+pZbdQP7HMQ3ciRO1+wcG73ClkhR4O12FhvFj7vUE3D8TJC4iv49ZXyvd52a6t9Txh2nafjybFDKpEs6z0kV99TaAmK9Xr/rUjiWIn4SjqXW77rEHaco2Hh/gZRJ5bwQG+42FuqVgfnkiUGhC/Fu863NG4plFgdypJLullL83xNh5JKE13WMnZ8gR0UA9hXaU12OPM1floQR/KGk89ULwRtJKc5qJXX67XKHlfyfkAByvK0mg/LqkdVScn2VQ+9zV+SgDBb/njt+NvBsl5fP2rnV0rLRnDO5DI9Nfyh5X9tF/JcaAORpFD91OcpW5BIwBBmSsMmgHP/Aid/B6nL9tY9XL1IZECOX81+Uo2PB3k8vP15reaA6l61EPwoR5BS3SHDF/Stq6z+C/38a5oolLe5PnPlsDMQX83UAAAAASUVORK5CYII=">
+                    <div>
+                        <h2 id= "box_title">약국 위치 정보(지도) <br></h2>
+                        <span id="box_span1"> 2021.10.28 </span>
+                        <span id="box_span2"> -도내 위치한 약국 위치 정보</span>
+                        <span id="box_span3"> -2023.11.27 기준</span> 
+                    </div>
+                </a>
+
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKRWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMDZUMTQ6MDE6MjIrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMDZUMTQ6MDE6MjIrMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDphOGUyOTFjMi00NWQ4LTlhNDUtYWVmZC0yM2Y5YzI5MGI0MDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ZGQ2ZTczZWUtZGY2ZS0xMjRmLTljZDQtNTZkMmIwYTIyOTg4IiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1OTE0ZmJkOC05YTdhLTU2NDItODM4NS00ZTk4NDdjZDFjM2EiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTQ6MDE6MjIrMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZGQ2ZTczZWUtZGY2ZS0xMjRmLTljZDQtNTZkMmIwYTIyOTg4IiBzdEV2dDp3aGVuPSIyMDIxLTEwLTA2VDE0OjAxOjIyKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjU5MTRmYmQ4LTlhN2EtNTY0Mi04Mzg1LTRlOTg0N2NkMWMzYSIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzZlNmM0NzctODgwNC1lZTQzLWI3YWEtYmI0MzQ5NzE4YzAzIi8+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjVENTQ2MTVBMDQyOTUxMjhDREI4NDVFQzlDMDJFNjg5PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+srTcRgAABPNJREFUaIHtWG1MW1UYfm+/oS3QQTPXKussFmNH0akDRWdczFAzE5MNosIWEvEjUdjCyJS4H/uxBR1uuh/+UHEfSlGbkZjMGDMNZkZ0H9EAG9nA4YqyZYSy0lLW715/3HF6eu+5Hy1XJerz65zzvvc5z3nPOe97WoqmaeBAgVqG+iFD/VDGqKF+KOSpJPumKegF6OsGRycjTJuiaXr/SMZUO5xAETUQRtMC2JoAIOSpZEZJgpjpr88l9HWDvFIIM5KlcaHCOxlxWNDGlovb8HCS58UpycFn2ViUN/lYC2aBdyu4IKyDiIy4NB2cODYwy7Q3PVh0dPtKAl80TjNOaiUFAH0/zkbjaUlpfUxE0DJZXan60nzROF3cMAwAOjUVidMAMON2adUUm0+rpm4r0QAA47TMqEJOILBv7C2mOUAnEwfhlJ4+46taW4K6O5w868WdePXxQaqfRKiEzfPR1JO7x38ev8F077Xnf7XbrtfybiKvum0fTn70zQzfZ5trio5sW8kdJ9Ot6/j1lwVFT1cX9rTZmHbjAe8XpwJMe409//vOOyTRoZOg1yqmPqnATcu3nJuPppg2NxWQo7DGns805qOpxgNeNN6w34u4kI+4OgB46b0/3CevE00AUHtPQV/HqizoGHBTIZDWiCByb0OeymceNqFulUMvwJWhTiDzhcPJN/edb225s3iZlujAXDGpdKIg0MkCqTlPIpa2OpnpRBLU+1/72g9fYeJBUdDVZH35CUJ2ReCNXSROlzQME00+t0uHVRJJdMTrhcB3N8ixc75yQYBLwIEcu4npGGqjpeHLxx1E1PUPz6H2odZSFCadmjqMJXTcTYjut2vpmesfMuGmupoiopsQ3e23aFDb84MfN+Fd3A1BpFYAT+yAZ3PJW2EuVE0HEkybePqK9Erih3/LuQMAn9vFZ2KVSkl0OjXV227jju/dYsnlUcHA/uLI1GwCdfM0iukeXmnidJAZxMBnLqWCfPkZiOc7z2s3y3PnVoswF+AHhbeS6QqMRnUknIytMvP5oEomkj4ZtLfdJbGiSH69i6wySzqps/6XCqPMi5UXMq9VXki6E6LwBRPD3vDv0/FYIqVRKUrNapctr6RgseS5f9970v9Gz1VUT/hgLlTtbbQ894hJ2I2IrM9cLEFv6rz83TlC+RfGoxXGz3fa8vmLAhfZiTs2MNt0cCJbWTgOtZay3igCyEJc94mZ7d2TRFO5Vff65uWPVRpNBqU/lPx2aO6tvqmLkxGi8zvPW1+oFXoLZy1uZi5hax7h+pZbdQP7HMQ3ciRO1+wcG73ClkhR4O12FhvFj7vUE3D8TJC4iv49ZXyvd52a6t9Txh2nafjybFDKpEs6z0kV99TaAmK9Xr/rUjiWIn4SjqXW77rEHaco2Hh/gZRJ5bwQG+42FuqVgfnkiUGhC/Fu863NG4plFgdypJLullL83xNh5JKE13WMnZ8gR0UA9hXaU12OPM1floQR/KGk89ULwRtJKc5qJXX67XKHlfyfkAByvK0mg/LqkdVScn2VQ+9zV+SgDBb/njt+NvBsl5fP2rnV0rLRnDO5DI9Nfyh5X9tF/JcaAORpFD91OcpW5BIwBBmSsMmgHP/Aid/B6nL9tY9XL1IZECOX81+Uo2PB3k8vP15reaA6l61EPwoR5BS3SHDF/Stq6z+C/38a5oolLe5PnPlsDMQX83UAAAAASUVORK5CYII=">
+                    <div>
+                        <h2 id= "box_title">병·의원 위치 정보(지도) <br></h2>
+                        <span id="box_span1"> 2021.10.28 </span>
+                        <span id="box_span2"> -도내 위치한 병·의원 위치 정보</span>
+                        <span id="box_span3"> -2023.11.27 기준</span> 
+                    </div>
+                </a>
+            
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKRWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowNDFjOGMzZi04MTgzLWI0NDEtOWZmOS03YmQxOTMyNmQ4NmQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1YWZlMjg5Ni1hNDlhLTY1NDgtOTA0NC03ZDc1Mzg5ZDgyNDAiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiBzdEV2dDp3aGVuPSIyMDIxLTEwLTA2VDE1OjM3OjAzKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVhZmUyODk2LWE0OWEtNjU0OC05MDQ0LTdkNzUzODlkODI0MCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzZlNmM0NzctODgwNC1lZTQzLWI3YWEtYmI0MzQ5NzE4YzAzIi8+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjVENTQ2MTVBMDQyOTUxMjhDREI4NDVFQzlDMDJFNjg5PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+TJ93YwAABMJJREFUaIHtWFtsFFUY/md2ul2WrS2xtJSWykLb7TUQLoXawIv6BvJgMFGeSERDiiZeGqK+IknTRGKUeGnUGENMIGpMePLyAiyl1YLtsuzS0ktqLZTWtBuW7XZ29hwfzvT07Jmzs7OX2E3s97CZ+c8/3/nO///nthLGGAyQufcPfFcRQoAxxhifGbpCfgMLsxhjYE1fjtwiTrrv9ucvkocT3kWM8QqvdDGWtDfdw6hMIEvv/azvKpUBZ4auLMVjQ/Mz5F1XQ6UQNQIpIh04FT4J9mOMFeEQVlQCvF7fCgAKa9qyvvivxyEAsElSHON9pZXPVmxL6HcpHqMdLcZjPcMDVH9CQO2yUnPkUs2RSwDgkJVXaneliBwZNpsE3SgsByPEKaOIaJolv3OBXhIKMz/i8X7LAaDxUxHq9nuplXPS+VSkESfazDkBgLQUj3X7e6mVeHBOAAAY4w/v9LKJp8VFk4Ex1uNHMnHvp6MsxavXowDwxdOO1HGhsJq3LPiEsFoHFmE2PVJCQ6jL7wWAdTblrca2rOhofgHgVP3epOpogRXalHca28yJjtfs3LyuiL4mxE5FGqkvDrS+zvquYdD9n6vY1lpayXnqdBxRZ1ObXVZ+uT/WP/e3kb2+uPSF6gajfYXuXOBGRItRItbjYfRxz8hN8lxid3R49DCR+iUgVcwPNi0I6fhUkIlEwE0nK7BUKOxswi8WmHhanT0WkWO6HM/ZHNPlWey6/dc1hHJD91GgT0XxLr83oqnZ0n0+PBBeZvlqdDArugvjvrmlCHl22JRTyxM5E7rLUyMT4QXyrEjy28yaKJhkdHV5o2FfkWLnWq89nBycf6BrkaTTze1sK193lIvgmLtlq6uEvg7Oz1yeGta/BHiP27Y5Oo6L4JlN7v0bqwBgIrxwYdxH7fwRgKNjuZxKAcvbWLzxYHn1Z8MD5lxgXI0J15sN+yFxi2GRjAtIZoVc5DMJJOtcujq677BcFF23vRrWp9G7Te2yLEOSlV1XZ5eVzqY2IRcAnG5u3+wsAoDOZa4U6sw9hEimLqGMs9x3IO/WOw6pN0bruyLk+2D/V3T5fQrILXIcugwQ0VSUpCmrO0+WUBH6ONgXjWsA4FLsJz27uTP+6qQVIfTpyMCCGuXsdtl20rPHtXxQWIXIfT3653TkkdHuUuwdnr0KsxX9p+K+nwwEQ3NGu122dXhanQovxqo4FaFvxwZnFsMAUOEsesnd7JDTGNiv98f6RNdOmySdqN31ZKFT+FXqmlMROn+333hCU2T5+PadZY715p///s/0z9Ojgo5BetndzJ4a0xOXTBbXx+EtdS0lZcamYGjuh8mAkP1QVd2ODeUmtGbiVKSdv/uHuSwO7F+M04uPvhkdRCLmg+VPHSirtsjJizOR5VQKOjx77LLy42TwTmhWSFfpfGJmMUwPlSx2bNh0qKrWoixenBVZrPHG7NRvD8at9LHVVXLM3ZKWrARxyZQJZbGYCC98N3FbmEEAKC10vla3m7WwJ18W7CmYF0fASkwpi0VIjfbcu7UU16jFuKJmK45KBACLstJFWuIECqgs9l7BIrM7RgZY/SOTCfJaXG4Ky/jXPUHKK5Y58jpya+IyxZq4TLF2b80U/wL33vO+2/G2oAAAAABJRU5ErkJggg==">
+                    <div>
+                        <h2 id= "box_title">시도별 코로나19 확인자 및 백신 2차 접종자 수 ... <br></h2>
+                        <span id="box_span1"> 2021.10.19 </span>
+                        <span id="box_span2"> -시도별 코로나19 확진자 및 백신 2차 접종자 수...</span>
+                        <span id="box_span3"> -출처: 공공데이터포털</span> 
+                    </div>
+                </a>
+
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKRWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowNDFjOGMzZi04MTgzLWI0NDEtOWZmOS03YmQxOTMyNmQ4NmQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1YWZlMjg5Ni1hNDlhLTY1NDgtOTA0NC03ZDc1Mzg5ZDgyNDAiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiBzdEV2dDp3aGVuPSIyMDIxLTEwLTA2VDE1OjM3OjAzKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVhZmUyODk2LWE0OWEtNjU0OC05MDQ0LTdkNzUzODlkODI0MCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzZlNmM0NzctODgwNC1lZTQzLWI3YWEtYmI0MzQ5NzE4YzAzIi8+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjVENTQ2MTVBMDQyOTUxMjhDREI4NDVFQzlDMDJFNjg5PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+TJ93YwAABMJJREFUaIHtWFtsFFUY/md2ul2WrS2xtJSWykLb7TUQLoXawIv6BvJgMFGeSERDiiZeGqK+IknTRGKUeGnUGENMIGpMePLyAiyl1YLtsuzS0ktqLZTWtBuW7XZ29hwfzvT07Jmzs7OX2E3s97CZ+c8/3/nO///nthLGGAyQufcPfFcRQoAxxhifGbpCfgMLsxhjYE1fjtwiTrrv9ucvkocT3kWM8QqvdDGWtDfdw6hMIEvv/azvKpUBZ4auLMVjQ/Mz5F1XQ6UQNQIpIh04FT4J9mOMFeEQVlQCvF7fCgAKa9qyvvivxyEAsElSHON9pZXPVmxL6HcpHqMdLcZjPcMDVH9CQO2yUnPkUs2RSwDgkJVXaneliBwZNpsE3SgsByPEKaOIaJolv3OBXhIKMz/i8X7LAaDxUxHq9nuplXPS+VSkESfazDkBgLQUj3X7e6mVeHBOAAAY4w/v9LKJp8VFk4Ex1uNHMnHvp6MsxavXowDwxdOO1HGhsJq3LPiEsFoHFmE2PVJCQ6jL7wWAdTblrca2rOhofgHgVP3epOpogRXalHca28yJjtfs3LyuiL4mxE5FGqkvDrS+zvquYdD9n6vY1lpayXnqdBxRZ1ObXVZ+uT/WP/e3kb2+uPSF6gajfYXuXOBGRItRItbjYfRxz8hN8lxid3R49DCR+iUgVcwPNi0I6fhUkIlEwE0nK7BUKOxswi8WmHhanT0WkWO6HM/ZHNPlWey6/dc1hHJD91GgT0XxLr83oqnZ0n0+PBBeZvlqdDArugvjvrmlCHl22JRTyxM5E7rLUyMT4QXyrEjy28yaKJhkdHV5o2FfkWLnWq89nBycf6BrkaTTze1sK193lIvgmLtlq6uEvg7Oz1yeGta/BHiP27Y5Oo6L4JlN7v0bqwBgIrxwYdxH7fwRgKNjuZxKAcvbWLzxYHn1Z8MD5lxgXI0J15sN+yFxi2GRjAtIZoVc5DMJJOtcujq677BcFF23vRrWp9G7Te2yLEOSlV1XZ5eVzqY2IRcAnG5u3+wsAoDOZa4U6sw9hEimLqGMs9x3IO/WOw6pN0bruyLk+2D/V3T5fQrILXIcugwQ0VSUpCmrO0+WUBH6ONgXjWsA4FLsJz27uTP+6qQVIfTpyMCCGuXsdtl20rPHtXxQWIXIfT3653TkkdHuUuwdnr0KsxX9p+K+nwwEQ3NGu122dXhanQovxqo4FaFvxwZnFsMAUOEsesnd7JDTGNiv98f6RNdOmySdqN31ZKFT+FXqmlMROn+333hCU2T5+PadZY715p///s/0z9Ojgo5BetndzJ4a0xOXTBbXx+EtdS0lZcamYGjuh8mAkP1QVd2ODeUmtGbiVKSdv/uHuSwO7F+M04uPvhkdRCLmg+VPHSirtsjJizOR5VQKOjx77LLy42TwTmhWSFfpfGJmMUwPlSx2bNh0qKrWoixenBVZrPHG7NRvD8at9LHVVXLM3ZKWrARxyZQJZbGYCC98N3FbmEEAKC10vla3m7WwJ18W7CmYF0fASkwpi0VIjfbcu7UU16jFuKJmK45KBACLstJFWuIECqgs9l7BIrM7RgZY/SOTCfJaXG4Ky/jXPUHKK5Y58jpya+IyxZq4TLF2b80U/wL33vO+2/G2oAAAAABJRU5ErkJggg==">
+                    <div>
+                        <h2 id= "box_title">시도별 코로나19 확인자 및 백신 1차 접종자 수 추이(일...<br></h2>
+                        <span id="box_span1"> 2021.10.19 </span>
+                        <span id="box_span2"> -시도별 코로나19 확진자 및 백신 1차 접종자 수...</span>
+                        <span id="box_span3"> -출처: 공공데이터포털</span> 
+                    </div>
+                </a>
+
+                <a href="#" class="info_box"> 
+                    <img id="info_image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAIAAAE9HbwqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKRWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4xLWMwMDAgNzkuN2E3YTIzNiwgMjAyMS8wOC8xMi0wMDoyNToyMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIiB4bXA6Q3JlYXRlRGF0ZT0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgeG1wOk1vZGlmeURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowNDFjOGMzZi04MTgzLWI0NDEtOWZmOS03YmQxOTMyNmQ4NmQiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDozNmU2YzQ3Ny04ODA0LWVlNDMtYjdhYS1iYjQzNDk3MThjMDMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIiB0aWZmOk9yaWVudGF0aW9uPSIxIiB0aWZmOlhSZXNvbHV0aW9uPSI3MjAwMDAvMTAwMDAiIHRpZmY6WVJlc29sdXRpb249IjcyMDAwMC8xMDAwMCIgdGlmZjpSZXNvbHV0aW9uVW5pdD0iMiIgZXhpZjpDb2xvclNwYWNlPSI2NTUzNSIgZXhpZjpQaXhlbFhEaW1lbnNpb249IjUyIiBleGlmOlBpeGVsWURpbWVuc2lvbj0iNTIiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjQxNzdhM2EzLWU1YTMtOTg0MC1hM2E0LTdjMTIzNzZiNjkyZSIgc3RFdnQ6d2hlbj0iMjAyMS0xMC0wNVQxMzowODoyMCswOTowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIyLjUgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo1YWZlMjg5Ni1hNDlhLTY1NDgtOTA0NC03ZDc1Mzg5ZDgyNDAiIHN0RXZ0OndoZW49IjIwMjEtMTAtMDZUMTU6Mzc6MDMrMDk6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMi41IChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY29udmVydGVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJmcm9tIGFwcGxpY2F0aW9uL3ZuZC5hZG9iZS5waG90b3Nob3AgdG8gaW1hZ2UvcG5nIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJkZXJpdmVkIiBzdEV2dDpwYXJhbWV0ZXJzPSJjb252ZXJ0ZWQgZnJvbSBhcHBsaWNhdGlvbi92bmQuYWRvYmUucGhvdG9zaG9wIHRvIGltYWdlL3BuZyIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NzBjMWFmMDgtMWIyOS0yMzQxLTljMTUtNDdmOGMwYzE4MjAxIiBzdEV2dDp3aGVuPSIyMDIxLTEwLTA2VDE1OjM3OjAzKzA5OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgMjIuNSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVhZmUyODk2LWE0OWEtNjU0OC05MDQ0LTdkNzUzODlkODI0MCIgc3RSZWY6ZG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjM2ZTZjNDc3LTg4MDQtZWU0My1iN2FhLWJiNDM0OTcxOGMwMyIgc3RSZWY6b3JpZ2luYWxEb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MzZlNmM0NzctODgwNC1lZTQzLWI3YWEtYmI0MzQ5NzE4YzAzIi8+IDxwaG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDxyZGY6QmFnPiA8cmRmOmxpPjVENTQ2MTVBMDQyOTUxMjhDREI4NDVFQzlDMDJFNjg5PC9yZGY6bGk+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6RG9jdW1lbnRBbmNlc3RvcnM+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+TJ93YwAABMJJREFUaIHtWFtsFFUY/md2ul2WrS2xtJSWykLb7TUQLoXawIv6BvJgMFGeSERDiiZeGqK+IknTRGKUeGnUGENMIGpMePLyAiyl1YLtsuzS0ktqLZTWtBuW7XZ29hwfzvT07Jmzs7OX2E3s97CZ+c8/3/nO///nthLGGAyQufcPfFcRQoAxxhifGbpCfgMLsxhjYE1fjtwiTrrv9ucvkocT3kWM8QqvdDGWtDfdw6hMIEvv/azvKpUBZ4auLMVjQ/Mz5F1XQ6UQNQIpIh04FT4J9mOMFeEQVlQCvF7fCgAKa9qyvvivxyEAsElSHON9pZXPVmxL6HcpHqMdLcZjPcMDVH9CQO2yUnPkUs2RSwDgkJVXaneliBwZNpsE3SgsByPEKaOIaJolv3OBXhIKMz/i8X7LAaDxUxHq9nuplXPS+VSkESfazDkBgLQUj3X7e6mVeHBOAAAY4w/v9LKJp8VFk4Ex1uNHMnHvp6MsxavXowDwxdOO1HGhsJq3LPiEsFoHFmE2PVJCQ6jL7wWAdTblrca2rOhofgHgVP3epOpogRXalHca28yJjtfs3LyuiL4mxE5FGqkvDrS+zvquYdD9n6vY1lpayXnqdBxRZ1ObXVZ+uT/WP/e3kb2+uPSF6gajfYXuXOBGRItRItbjYfRxz8hN8lxid3R49DCR+iUgVcwPNi0I6fhUkIlEwE0nK7BUKOxswi8WmHhanT0WkWO6HM/ZHNPlWey6/dc1hHJD91GgT0XxLr83oqnZ0n0+PBBeZvlqdDArugvjvrmlCHl22JRTyxM5E7rLUyMT4QXyrEjy28yaKJhkdHV5o2FfkWLnWq89nBycf6BrkaTTze1sK193lIvgmLtlq6uEvg7Oz1yeGta/BHiP27Y5Oo6L4JlN7v0bqwBgIrxwYdxH7fwRgKNjuZxKAcvbWLzxYHn1Z8MD5lxgXI0J15sN+yFxi2GRjAtIZoVc5DMJJOtcujq677BcFF23vRrWp9G7Te2yLEOSlV1XZ5eVzqY2IRcAnG5u3+wsAoDOZa4U6sw9hEimLqGMs9x3IO/WOw6pN0bruyLk+2D/V3T5fQrILXIcugwQ0VSUpCmrO0+WUBH6ONgXjWsA4FLsJz27uTP+6qQVIfTpyMCCGuXsdtl20rPHtXxQWIXIfT3653TkkdHuUuwdnr0KsxX9p+K+nwwEQ3NGu122dXhanQovxqo4FaFvxwZnFsMAUOEsesnd7JDTGNiv98f6RNdOmySdqN31ZKFT+FXqmlMROn+333hCU2T5+PadZY715p///s/0z9Ojgo5BetndzJ4a0xOXTBbXx+EtdS0lZcamYGjuh8mAkP1QVd2ODeUmtGbiVKSdv/uHuSwO7F+M04uPvhkdRCLmg+VPHSirtsjJizOR5VQKOjx77LLy42TwTmhWSFfpfGJmMUwPlSx2bNh0qKrWoixenBVZrPHG7NRvD8at9LHVVXLM3ZKWrARxyZQJZbGYCC98N3FbmEEAKC10vla3m7WwJ18W7CmYF0fASkwpi0VIjfbcu7UU16jFuKJmK45KBACLstJFWuIECqgs9l7BIrM7RgZY/SOTCfJaXG4Ky/jXPUHKK5Y58jpya+IyxZq4TLF2b80U/wL33vO+2/G2oAAAAABJRU5ErkJggg==">
+                    <div>
+                        <h2 id= "box_title">시도별 코로나19 백신 접종자 수 추이(일간)  <br></h2>
+                        <span id="box_span1"> 2021.10.19 </span>
+                        <span id="box_span2"> -시도별 코로나19 백신 접종자 수 추이</span>
+                        <span id="box_span3"> -출처: 공공데이터포털</span> 
+                    </div>
+                </a>
+
+            </div>
+            
+            
+            <br><br><br>
+
+
+
+            <br><br>
+
+            <div class="info_number">
+
+                <input type="radio">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+
+
+            </div>
+
+            <br><br><br>
+
+
+
+
+        </div> <!-- infographic_container2 끝 -->
+
+</section><!-- infographic_container1 끝 -->
+
+
+
+
+
+
+
+    <!-- 아래쪽 -->
+     <!-- 푸터를 여기에 넣고  -->
+     <footer class="footer" id="footer">
+        <div class="footer-logo">
+            <hr>
+            <img src="../images/components/datahub-logo-removebg-preview.png" alt="JEJU Data Hub Logo">
+            <div class="footer-info">
+                
+                <p>(63309) 제주특별자치도 제주시 청사로 10 제주 데이터허브센터 | 064-710-3933 | jejudatahub@email.com</p>
+                <p>&copy; Jeju Data Hub, 2020</p>
+            </div>
+        </div>
+        </footer>
+
+    
+   
+</body>
+</html>

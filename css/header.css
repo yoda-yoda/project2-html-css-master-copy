@@ -24,7 +24,7 @@
 }
 
 .header nav ul li {
-    font-size: clamp(12px, 2vw, 16px); /* 크기 범위 확장 */
+    font-size: clamp(11px, 2vw, 15px); /* 크기 범위 확장 */
     color: #595959;
 }
 
