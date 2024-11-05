@@ -1,5 +1,7 @@
+<!-- chatbot.html 완료 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,39 +13,40 @@
     <link rel="stylesheet" href="../css/chatbot.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <header class="header">
-        <a href="../pages/main.html">
+        <a href="../index.html">
             <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
         </a>
         <nav>
             <ul>
-                <li><a href="../pages/chatbot.html">이용안내</a></li>
-                <li><a href="../pages/data.html">데이터</a></li>
+                <li><a href="./information.html">이용안내</a></li>
+                <li><a href="./data.html">데이터</a></li>
                 <li class="dropdown">
-                    <a href="../pages/infographic.html">인포그래픽</a>
+                    <a href="./graphics/general.html">인포그래픽</a>
                     <ul class="submenu">
-                        <li><a href="../pages/infographic.html">차트인포그래픽</a></li>
-                        <li><a href="../pages/infographic-media.html">영상인포그래픽</a></li>
+                        <li><a href="./graphics/general.html">차트인포그래픽</a></li>
+                        <li><a href="./graphics/multimedia.html">영상인포그래픽</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="../pages/aireport.html">리포트</a>
-                    
+                    <a href="./reports/ai-reports.html">리포트</a>
+
                     <ul class="submenu">
-                        <li><a href="../pages/aireport.html">AI리포트</a></li>
-                        <li><a href="../pages/essencereport.html">정기리포트</a></li>
+                        <li><a href="./reports/ai-reports.html">AI리포트</a></li>
+                        <li><a href="./reports/reports-series.html">정기리포트</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="../pages/jeju-center.html">지역빅데이터센터</a>
+                    <a href="./centers/about.html">지역빅데이터센터</a>
                     <ul class="submenu">
-                        <li><a href="../pages/jeju-center.html">센터소개</a></li>
-                        
+                        <li><a href="./centers/about.html">센터소개</a></li>
+
                         <li>제공데이터</li>
                         <li>데이터검색</li>
-                        <li><a href="../pages/jeju-analysis.html">분석실예약</a></li>
-                        <li><a href="../pages/jeju-classroom.html">교육장예약</a></li>
+                        <li><a href="./centers/analysis-rooms/reservations.html">분석실예약</a></li>
+                        <li><a href="./centers/training-rooms/reservations.html">교육장예약</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -58,7 +61,7 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="../pages/login.html"><button>로그인</button></a>
+            <a href="./auth/signin.html"><button>로그인</button></a>
             <button>회원가입</button>
         </div>
 
@@ -69,12 +72,12 @@
         <div class="content-wrap">
             <br><br>
             <div class="chat-container">
-                
+
                 <p>
                     <img src="../images/chatbot/chatbot_haechi.png" alt="">
                 </p>
                 <p>
-                    안녕하세요! 저는 제주데이터허브의 
+                    안녕하세요! 저는 제주데이터허브의
                     <strong>
                         AI 챗봇 데허
                     </strong>
@@ -83,7 +86,7 @@
                     제주데이터허브에서 보유한 다양한 공공데이터를
                     <strong>일상 언어로 편하게 질문</strong>해주세요!
                 </p>
-                <p> 
+                <p>
                     만약 어떻게 질문 해야 할 지 잘 모르시겠다면? 아래 예시로 예문을 확인해주세요!
                 </p>
                 <div class="chatbot-intro-top">
@@ -115,7 +118,7 @@
                                 <li>
                                     <button class="btn-medium btn-outline-gray">분류별 질문 보기</button>
                                     <span>교육, 교통, 도시관리와 같은 분류별 질문 예시를 보실 수 있어요.</span>
-                                    
+
                                 </li>
                                 <li>
                                     <button class="btn-medium btn-outline-gray">유형별 질문 보기</button>
@@ -139,9 +142,9 @@
                     </div>
                 </div>
             </div>
-            
 
-       </div>
+
+        </div>
     </div>
 
     <br><br><br>
@@ -152,11 +155,12 @@
             <hr>
             <img src="../images/components/datahub-logo-removebg-preview.png" alt="JEJU Data Hub Logo">
             <div class="footer-info">
-                
+
                 <p>(63309) 제주특별자치도 제주시 청사로 10 제주 데이터허브센터 | 064-710-3933 | jejudatahub@email.com</p>
                 <p>&copy; Jeju Data Hub, 2020</p>
             </div>
         </div>
     </footer>
 </body>
+
 </html>

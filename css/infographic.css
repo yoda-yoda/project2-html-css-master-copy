@@ -132,6 +132,12 @@
     
 }
 
+
+.infoSide_hover:hover {
+    color: #262626;
+    
+}
+
 .video_info {
     border-bottom: 1px solid #b3b3b3;
     width: 180px;
@@ -163,6 +169,7 @@
     margin-right: 300px;
     display: inline-block;
 }
+
 
 
 .info_box_grid { /* 수정중 */
@@ -242,12 +249,10 @@
 }
 
 #box_span3{
-
     display: block;
     margin-left: 93px;
     font-size: 12px;
     color: #999999;
-
 }
 
 #info_header {
@@ -259,7 +264,6 @@
     display : flex;
     justify-content: center;
 }
-
 
 
 #info_select {
@@ -297,12 +301,8 @@
     
 }
 
-#test1{
+#startBody{
     display: inline;
     justify-content: space-between; 
-}
-
-#test2{
-    display: inline;
 }
 

@@ -1,5 +1,7 @@
+<!-- 완료 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,39 +13,40 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <header class="header">
-        <a href="../pages/main.html">
+        <a href="../index.html">
             <img src="../images/components/datahub-logo-removebg-preview.png" alt="logo">
         </a>
         <nav>
             <ul>
-                <li><a href="../pages/chatbot.html">이용안내</a></li>
-                <li><a href="../pages/data.html">데이터</a></li>
+                <li><a href="./information.html">이용안내</a></li>
+                <li><a href="./data.html">데이터</a></li>
                 <li class="dropdown">
-                    <a href="../pages/infographic.html">인포그래픽</a>
+                    <a href="./graphics/general.html">인포그래픽</a>
                     <ul class="submenu">
-                        <li><a href="../pages/infographic.html">차트인포그래픽</a></li>
-                        <li><a href="../pages/infographic-media.html">영상인포그래픽</a></li>
+                        <li><a href="./graphics/general.html">차트인포그래픽</a></li>
+                        <li><a href="./graphics/multimedia.html">영상인포그래픽</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="../pages/aireport.html">리포트</a>
-                    
+                    <a href="./reports/ai-reports.html">리포트</a>
+
                     <ul class="submenu">
-                        <li><a href="../pages/aireport.html">AI리포트</a></li>
-                        <li><a href="../pages/essencereport.html">정기리포트</a></li>
+                        <li><a href="./reports/ai-reports.html">AI리포트</a></li>
+                        <li><a href="./reports/reports-series.html">정기리포트</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="../pages/jeju-center.html">지역빅데이터센터</a>
+                    <a href="./centers/about.html">지역빅데이터센터</a>
                     <ul class="submenu">
-                        <li><a href="../pages/jeju-center.html">센터소개</a></li>
-                        
+                        <li><a href="./centers/about.html">센터소개</a></li>
+
                         <li>제공데이터</li>
                         <li>데이터검색</li>
-                        <li><a href="../pages/jeju-analysis.html">분석실예약</a></li>
-                        <li><a href="../pages/jeju-classroom.html">교육장예약</a></li>
+                        <li><a href="./centers/analysis-rooms/reservations.html">분석실예약</a></li>
+                        <li><a href="./centers/training-rooms/reservations.html">교육장예약</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -58,7 +61,7 @@
             </ul>
         </nav>
         <div class="auth-buttons">
-            <a href="../pages/login.html"><button>로그인</button></a>
+            <a href="./auth/signin.html"><button>로그인</button></a>
             <button>회원가입</button>
         </div>
 
@@ -67,7 +70,7 @@
     <div class="main-image">
         <img src="../images/data/image.png" alt="Main Visual">
     </div>
-    
+
 
     <!-- Wrapper containing Sidebar and Main Content -->
     <div class="wrapper">
@@ -119,7 +122,7 @@
                                     <p>2021-01-18 | 내국인 관광객 지역, 업종, 성별, 연령대별...</p>
                                 </div>
                             </div>
-                            
+
                             <!-- 슬라이드 2 -->
                             <input type="radio" name="popular-slider" id="popular-slide2" hidden>
                             <div class="slide" id="popular-data-slide-2">
@@ -147,7 +150,7 @@
                                     <p>2021-01-18 | 내국인 관광객 지역, 업종, 성별, 연령대별...</p>
                                 </div>
                             </div>
-                            
+
                             <!-- 슬라이드 2 -->
                             <input type="radio" name="latest-slider" id="latest-slide2" hidden>
                             <div class="slide" id="latest-data-slide-2">
@@ -164,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-            
+
                 <section class="data-table">
                     <div class="search-container">
                         <div class="search-bar">
@@ -177,18 +180,18 @@
                         <p class="search-description">- 검색한 키워드는 하단에 추가 됩니다.</p>
                         <p class="search-description">- 검색 결과 중 제외하고 싶은 키워드는 앞에 ‘-‘를 입력하세요. (예 : ‘-공항’)</p>
                     </div>
-                    
+
                     <hr class="aside-hr">
-                    
+
                     <div class="table-header">
                         <span class="item-count">총 1257 개 항목</span>
                         <div class="data-dropdown">
                             <select class="dropdown-select">
-                              <option value="latest">최신순</option>
-                              <option value="views">조회순</option>
-                              <option value="favorites">즐겨찾기순</option>
+                                <option value="latest">최신순</option>
+                                <option value="views">조회순</option>
+                                <option value="favorites">즐겨찾기순</option>
                             </select>
-                        </div> 
+                        </div>
                     </div>
                     <table class="data-table">
                         <thead>
@@ -207,7 +210,8 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1257</td>
@@ -229,7 +233,8 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1256</td>
@@ -251,7 +256,8 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1255</td>
@@ -273,7 +279,8 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1254</td>
@@ -286,7 +293,7 @@
                                         <span>FILE</span>
                                     </div>
                                 </td>
-                            
+
                                 <td>2024-10-14</td>
                                 <td>제주데이터허브</td>
                                 <td>17</td>
@@ -296,7 +303,8 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1253</td>
@@ -318,7 +326,8 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1252</td>
@@ -340,7 +349,8 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1251</td>
@@ -362,9 +372,10 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
-                                    
+
                                 </td>
                                 <td>1250</td>
                                 <td class="data-name">
@@ -385,13 +396,15 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1249</td>
                                 <td class="data-name">
                                     <div class="data-name-container">
-                                        <span class="data-name-content">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 검색어트랜드내역</span>
+                                        <span class="data-name-content">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU)
+                                            검색어트랜드내역</span>
                                         <span class="data-name-label">N</span>
                                     </div>
                                     <div class="data-file-label">
@@ -407,13 +420,15 @@
                                 <td>
                                     <label class="star-label">
                                         <input type="checkbox" class="star-checkbox" hidden>
-                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png" alt="unfilled-star">
+                                        <img class="star-icon" src="../images/data/star-svgrepo-com.png"
+                                            alt="unfilled-star">
                                     </label>
                                 </td>
                                 <td>1248</td>
                                 <td class="data-name">
                                     <div class="data-name-container">
-                                        <span class="data-name-content">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU) 여행장소</span>
+                                        <span class="data-name-content">[관광, 여행] 제주관광공사 제주관광정보시스템(VISIT JEJU)
+                                            여행장소</span>
                                         <span class="data-name-label">N</span>
                                     </div>
                                     <div class="data-file-label">
@@ -434,8 +449,8 @@
                     </div>
 
                     <br>
-                    
-                    
+
+
                     <div class="pagination-container">
                         <label>
                             <input type="radio" name="pagination" hidden>
@@ -483,12 +498,12 @@
                             <span class="pagination-label">»</span>
                         </label>
                     </div>
-                    
+
 
                     <br>
                 </section>
             </main>
-            
+
         </div>
     </div>
 
@@ -498,13 +513,14 @@
             <hr>
             <img src="../images/components/datahub-logo-removebg-preview.png" alt="JEJU Data Hub Logo">
             <div class="footer-info">
-                
+
                 <p>(63309) 제주특별자치도 제주시 청사로 10 제주 데이터허브센터 | 064-710-3933 | jejudatahub@email.com</p>
                 <p>&copy; Jeju Data Hub, 2020</p>
             </div>
         </div>
     </footer>
-    
-    
+
+
 </body>
+
 </html>
