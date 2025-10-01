@@ -1,4 +1,4 @@
-# 💻 HTML-CSS-MASTER-Copy 클론 코딩 팀프로젝트
+# 💻 Html-Css-Master-Copy 클론 코딩 팀프로젝트
 
  
 
