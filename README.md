@@ -1,4 +1,4 @@
-# 💻 Html-Css-Master-Copy 클론 코딩 팀프로젝트
+# 2차 프로젝트 - **HTML-CSS 마스터 카피 팀프로젝트 (html-css-master-copy team project)**
 
  
 
