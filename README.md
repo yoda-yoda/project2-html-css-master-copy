@@ -51,10 +51,14 @@ VS Code, LiveServer, Git, GitHub, GitHub-pages
 
 <img width="1540" height="822" alt="image" src="https://github.com/user-attachments/assets/879c73b5-89aa-427f-8fb9-c8dbfd05551c" />  
 
+<br><br>
+
+## 📜 해당 페이지
+
+<img width="2110" height="1933" alt="최종작업_인포페이지" src="https://github.com/user-attachments/assets/52e8d3e3-08dd-4125-a5a7-41d414cfb3f3" />
 
 
-
-        
+<br><br>
 
 
 
