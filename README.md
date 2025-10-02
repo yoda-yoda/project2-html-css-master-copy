@@ -1,8 +1,9 @@
 # 2차 프로젝트 - **HTML-CSS 마스터 카피 팀프로젝트 (html-css-master-copy team project)**
+<br>
 
  
 
-### 💡 팀(팀명:2지) 프로젝트 개요  
+## 💡 팀(팀명:2지) 프로젝트 개요  
 
   
 **목적:**  
@@ -19,6 +20,8 @@ HTML, CSS
 **활용 도구:**  
 VS Code, LiveServer, Git, GitHub, GitHub-pages      
 
+<br>
+<br>
 
 ## 📅 프로젝트 기간 및 절차
 
@@ -30,19 +33,19 @@ VS Code, LiveServer, Git, GitHub, GitHub-pages
 | **구현** | 11/01 ~ 11/4 | 요구사항에 맞게 구현, 팀별 중간보고 실시 |
 | **배포 및 산출물 작성** |11/5 | 오류 수정 및 배포, 최적화(ex: 파일경로) 등의 작업 진행 |
 
-
+<br><br>
 
 ## 🤝 팀 역할 분담
 
 <img width="1542" height="822" alt="image" src="https://github.com/user-attachments/assets/fac65f67-b634-4ce8-bb47-461a41de1da2" />
 
-
+<br><br>
 
 ## ⛹️‍♂️ 실제 역할
 
 <img width="1500" height="824" alt="image" src="https://github.com/user-attachments/assets/6a3d2acb-fae1-4e78-8866-a534650fd64a" />
 
-
+<br><br>
 
 ## 🔗 트러블 슈팅
 
